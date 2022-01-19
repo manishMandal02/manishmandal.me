@@ -1,61 +1,83 @@
-import { motion } from 'framer-motion';                            
-import Image from 'next/image';                                 
+import { motion, useAnimation } from 'framer-motion';
+import Image from 'next/image';
 import React, { useState } from 'react';
-import { BsArrowsExpand } from 'react-icons/bs';                    
+import { BsArrowsExpand } from 'react-icons/bs';
 
 const HeroSection = () => {
+  // animation ref
+  const planeControls = useAnimation();
   // state
   const [isCopied, setIsCopied] = useState<boolean>(false);
   const planeVariants = {
+    initial: {
+      x: -1400,
+      y: -500,
+      rotateX: 30,
+      rotateZ: 20,
+    },
     animate: {
-      y: [2, -5, 2],
+      y: 2,
+      x: 1,
+      rotateX: 10,
+      rotateZ: -1,
+      transition: {
+        // duration: 1,
+        type: 'spring',
+        stiffness: 22,
+        rotateZ: {
+          duration: 2,
+        },
+        rotateX: {
+          duration: 2,
+        },
+      },
+    },
+    whileInView: {
+      y: [2, -8, 2],
       x: [1, -8, 1],
-      rotateX: [5, -30, 5],
+      rotateX: [10, -25, 10],
       rotateZ: [-1, 1, -1],
+      transition: {
+        stiffness: 150,
+        repeat: Infinity,
+        duration: 2.4,
+        type: 'spring',
+      },
     },
   };
 
-  const planeTransition = {
-    y: {
-      yoyo: Infinity,
-      duration: 2.5,
-      type: 'spring',
+  const planeAnimationSquence = async () => {
+    await planeControls.start('animate');
+    // scrollDownControls.start('animate');
+    planeControls.start('whileInView');
+  };
+
+  planeAnimationSquence();
+
+  const scrollDownContainerVariant = {
+    initial: {
+      opacity: 0,
     },
-    x: {
-      yoyo: Infinity,
-      duration: 2.5,
-      type: 'spring',
-    },
-    rotateX: {
-      repeat: Infinity,
-      duration: 2.5,
-      type: 'spring',
-    },
-    rotateZ: {
-      repeat: Infinity,
-      duration: 2.5,
-      type: 'tween',
+
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        type: 'tween',
+        delay: 2,
+      },
     },
   };
 
   const scrollDownVariant = {
-    initial: {
-      y: -200,
-      opacity: 0,
+    onHover: {
+      y: 8,
+      transition: {
+        duration: 0.2,
+        type: 'spring',
+        stiffness: 120,
+      },
     },
-    animate: {
-      y: 0,
-      opacity: 1,
-    },
-    hover: {
-      y: [-10, 10],
-    },
-  };
-  const scrollDownTransition = {
-    duration: 0.8,
-    // delay: 1,
-    type: 'spring',
-    stiffness: 150,
   };
 
   // copy email
@@ -69,13 +91,14 @@ const HeroSection = () => {
       }, 800);
     }
   };
+
   return (
     <div className='flex w-full mx-24 mt-8'>
       {/* Left container */}
       <div className='flex flex-col w-1/2 items-start justify-center py-12 pl-32 relative'>
         <p className='m-0 flex items-center font-semibold text-primary text-xl tracking-wide'>
-          <span className=' font-extrabold text-lg -mt-5  font-sans'>____</span> &nbsp; Hello, I am Manish
-          Mandal
+          <span className=' font-extrabold -mt-5 font-mono  tracking-tighter'>____</span> &nbsp; Hello, I am
+          Manish Mandal
         </p>
         <p className='text-6xl font-bold text-slate-700 leading-none '>
           FullStack Web & App Developer <span className='-ml-2 text-xl'>🟠🟢🟣</span>
@@ -101,23 +124,27 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Scroll Down */}
-        <div className='absolute -bottom-24 -right-8 flex items-center '>
+        <motion.div
+          variants={scrollDownContainerVariant}
+          initial='initial'
+          animate='animate'
+          className='absolute -bottom-24 -right-8 flex items-center'
+        >
           <motion.div
             variants={scrollDownVariant}
             initial='initial'
             animate='animate'
-            whileHover='hover'
-            transition={scrollDownTransition}
-            className=' py-4 px-4 rounded-full shadow-md text-xl mr-5  scale-125 shadow-gray-300 cursor-pointer'
+            whileHover='onHover'
+            className=' py-4 px-4 rounded-full shadow-md text-lg mr-4  scale-125 shadow-gray-300 cursor-pointer'
           >
             <BsArrowsExpand />
           </motion.div>
-          <p className='m-0 text-lg text-slate-500 font-medium -mb-2'>Scroll down</p>
-        </div>
+          <motion.p className='m-0 text-lg text-slate-500 font-medium cursor-default'>Scroll down</motion.p>
+        </motion.div>
       </div>
       {/* Right container */}
       <div className='flex flex-col w-1/2 items-center justify-center'>
-        <motion.div variants={planeVariants} initial='initial' animate='animate' transition={planeTransition}>
+        <motion.div variants={planeVariants} initial='initial' animate={planeControls}>
           <Image src='/plane.svg' className='w-full' width={400} height={200} />
         </motion.div>
       </div>
