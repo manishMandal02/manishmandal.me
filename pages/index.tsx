@@ -6,7 +6,7 @@ import HeroSection from '../components/HeroSection';
 
 export default function Home() {
   return (
-    <div className=' flex flex-col min-h-screen py-2'>
+    <div className=' flex flex-col min-h-screen overflow-hidden'>
       <Head>
         <title>Manish Mandal</title>
         <link rel='icon' href='/favicon.ico' />

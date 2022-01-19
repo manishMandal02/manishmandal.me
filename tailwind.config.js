@@ -7,6 +7,12 @@ module.exports = {
           DEFAULT: '#7B1AF8',
         },
       },
+      borderWidth: {
+        3: '3px',
+      },
+      transitionDuration: {
+        400: '400ms',
+      },
     },
   },
   plugins: [],
