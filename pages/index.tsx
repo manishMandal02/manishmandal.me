@@ -3,7 +3,7 @@ import Head from 'next/head';
 // components
 
 import Header from '../components/Header';
-import HeroSection from '../components/landingSection/LandingSection';
+import HeroSection from '../components/landingSection/Index';
 
 export default function Home() {
   return (
@@ -15,16 +15,6 @@ export default function Home() {
       <Header />
       <HeroSection />
       <p className='mt-96'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium nulla aliquid doloremque sit
-        repellendus, eius eum dolorum maxime perspiciatis, dolor quibusdam mollitia alias magnam cupiditate,
-        minima accusamus consectetur corrupti?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium nulla aliquid doloremque sit
-        repellendus, eius eum dolorum maxime perspiciatis, dolor quibusdam mollitia alias magnam cupiditate,
-        minima accusamus consectetur corrupti?
-      </p>
-      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium nulla aliquid doloremque sit
         repellendus, eius eum dolorum maxime perspiciatis, dolor quibusdam mollitia alias magnam cupiditate,
         minima accusamus consectetur corrupti?

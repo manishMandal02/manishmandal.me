@@ -48,23 +48,22 @@ const introNameVariant = {
     transition: {
       //   duration: 0.1,
       type: 'spring',
-      stiffness: 100,
-      delay: 2,
+      stiffness: 120,
+      delay: 1.6,
     },
   },
 };
 const introNameLineVariant = {
   initial: {
-    x: -600,
+    x: -400,
   },
   animate: {
     x: 0,
-
     transition: {
       //   duration: 1,
       type: 'spring',
       stiffness: 100,
-      delay: 0.5,
+      // delay: 0.5,
     },
   },
 };
@@ -92,9 +91,9 @@ const subTitleVariant = {
     x: 0,
     transition: {
       type: 'spring',
-      duration: 1.5,
+      duration: 1,
       delay: i * 0.4,
-      stiffness: 80,
+      stiffness: 100,
     },
   }),
 };
@@ -108,7 +107,7 @@ const emailContainerVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 5,
+      delay: 6,
       duration: 0.8,
       type: 'easeIn',
     },
