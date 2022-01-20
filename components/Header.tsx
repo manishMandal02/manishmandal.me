@@ -6,18 +6,18 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <nav className='h-20  overflow-hidden flex items-center justify-around py-8'>
+    <nav className='h-20  overflow-hidden flex items-center justify-around py-8 fixed top-0 w-full '>
       <Link href={'/'}>
         <Image src={'/m-logo.svg'} className='cursor-pointer' width={60} height={60} alt='manish-mandal' />
       </Link>
       <ul className='-mr-44 flex items-center justify-center h-full '>
-        <a href='#' className='text-xl  text-slate-700'>
+        <a href='#' className='text-xl  text-slate-600'>
           AboutMe
         </a>
-        <a href='#' className='ml-5 text-xl  text-slate-700'>
+        <a href='#' className='ml-5 text-xl  text-slate-600'>
           Projects
         </a>
-        <a href='#' className='ml-5 text-xl  text-slate-700'>
+        <a href='#' className='ml-5 text-xl  text-slate-600'>
           Resume
         </a>
       </ul>
