@@ -7,7 +7,7 @@ const ScrollDown = () => {
   return (
     <>
       <motion.div
-        className='absolute -bottom-24 -right-10 flex items-center'
+        className='absolute bottom-5 -right-16  flex items-center'
         variants={scrollDownContainerVariant}
         initial='initial'
         animate='animate'

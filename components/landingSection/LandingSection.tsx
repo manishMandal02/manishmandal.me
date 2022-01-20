@@ -1,6 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { planeVariants } from '../../src/animations/landingSection';
 import MainTitle from './MainTitle';
@@ -30,7 +30,10 @@ const HeroSection = () => {
   // title animation start
 
   return (
-    <div className='flex w-full mx-24 mt-32'>
+    <div
+      className='flex w-full  h-screen mx-24 '
+      style={{ backgroundImage: 'url(/geo-bg.svg)', backgroundAttachment: 'fixed' }}
+    >
       {/* Left container */}
       <div className='flex flex-col w-1/2 items-start justify-center py-12 pl-32 relative'>
         <MainTitle controls={titleControls} />
