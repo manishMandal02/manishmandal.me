@@ -20,22 +20,24 @@ const HeroSection = () => {
   const planeAnimationSequence = async () => {
     await planeControls.start('animate');
     planeControls.start('whileInView');
-    titleControls.start('animate');
+  };
+  const titleAnimationSequence = async () => {
+    await titleControls.start('animate');
     subTitleControls.start('animate');
     scrollDownControls.start('animate');
   };
 
   planeAnimationSequence();
-
+  titleAnimationSequence();
   // title animation start
 
   return (
     <div
-      className='flex w-full  h-screen mx-24 '
-      style={{ backgroundImage: 'url(/geo-bg.svg)', backgroundAttachment: 'fixed' }}
+      className='flex w-full mt-36  h-full'
+      // style={{ backgroundImage: 'url(/geo-bg.svg)', backgroundAttachment: 'fixed' }}
     >
       {/* Left container */}
-      <div className='flex flex-col w-1/2 items-start justify-center py-12 pl-32 relative'>
+      <div className='flex flex-col w-1/2 items-start justify-center py-12 ml-64 relative'>
         <MainTitle controls={titleControls} />
         <Subtitle controls={subTitleControls} />
         {/* Email */}
@@ -49,7 +51,7 @@ const HeroSection = () => {
         // style={{ backgroundImage: 'url(/geo-bg.svg)' }}
       >
         <motion.div variants={planeVariants} initial='initial' animate={planeControls}>
-          <Image src='/plane.svg' className='w-full' width={400} height={200} />
+          <Image src='/plane.svg' className='w-full' width={500} height={300} />
         </motion.div>
       </div>
     </div>

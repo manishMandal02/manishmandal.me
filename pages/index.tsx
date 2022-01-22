@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import AboutMe from '../components/aboutMe/Index';
 
 // components
 
@@ -14,11 +15,8 @@ export default function Home() {
       </Head>
       <Header />
       <HeroSection />
-      <p className='mt-96'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium nulla aliquid doloremque sit
-        repellendus, eius eum dolorum maxime perspiciatis, dolor quibusdam mollitia alias magnam cupiditate,
-        minima accusamus consectetur corrupti?
-      </p>
+      {/* About Me */}
+      <AboutMe />
     </div>
   );
 }

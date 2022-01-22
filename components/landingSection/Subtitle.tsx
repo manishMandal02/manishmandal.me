@@ -11,11 +11,11 @@ const Subtitle: React.FC<Props> = ({ controls }) => {
 
   return (
     <>
-      <motion.div className='flex mt-12 text-3xl font-semibold text-slate-700 mb-2'>
+      <motion.div className='flex -ml-3 mt-14 text-3xl font-semibold text-slate-600 mb-2'>
         {mainSkills.map((skill, i) => (
           <motion.p
             key={skill + '-' + i}
-            className=''
+            className='m-0 ml-3'
             variants={subTitleVariant}
             custom={i}
             initial='initial'

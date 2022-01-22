@@ -32,12 +32,12 @@ const MainTitle: React.FC<Props> = ({ controls }) => {
         &nbsp; Hello, I am Manish Mandal
       </motion.p>
       <motion.p
-        className='text-6xl font-bold text-slate-700 leading-none '
+        className='text-7xl font-extrabold text-slate-600 leading- tracking-wide'
         variants={introTitleVariant}
         initial='initial'
         animate='animate'
       >
-        FullStack Web & App Developer <span className='-ml-2 text-xl'>🟠🟢🟣</span>
+        FullStack Web Developer <span className='-ml-3 text-xl'>🟠🟢🟣</span>
       </motion.p>
     </>
   );

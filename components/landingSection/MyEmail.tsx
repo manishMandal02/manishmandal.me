@@ -19,7 +19,7 @@ const MyEmail = () => {
   return (
     <>
       <motion.div
-        className='relative group flex justify-center items-center mt-16 border-3 border-primary cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
+        className='relative group flex justify-center items-center mt-16 border-2 border-primary cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
         onClick={copyEmailHandler}
         variants={emailContainerVariant}
         initial='initial'
