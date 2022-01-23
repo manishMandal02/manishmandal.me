@@ -22,7 +22,7 @@ const About = () => {
         </motion.span>{' '}
         &nbsp; About me
       </motion.div>
-      <p className='text-lg leading-7   text-gray-800 py-2 px-5 mt-4 border-l-3 border-primary border-opacity ml-6'>
+      <p className='text-lg leading-7 font-medium  text-gray-900 py-2 px-5 mt-4 border-l-2 border-primary border-opacity ml-6'>
         I am a self-thought developer from Bangalore, India <br />
         Experienced in using JavaScript and its ecosystem, <br />
         namely React & NodeJs to develop applications. <br />

@@ -32,13 +32,14 @@ const TechSystem = () => {
 
   return (
     <div className='py-4 px-4 w-1/2 flex items-center justify-center'>
+      <div className='absolute border-2 border-dashed border-gray-200 w-44 h-44 z-30 rounded-full'></div>
+      {/* tech stacks */}
       <motion.div
         variants={techStackContainerVariant}
         initial='initial'
         animate='animate'
-        className='bg-white flex items-center justify-center shadowPlane1  border-slate-200 w-60 h-60 rounded-full relative '
+        className='bg-white flex items-center justify-center shadowPlane1 border-2 border-dashed  border-slate-100 w-60 h-60 rounded-full relative '
       >
-        {/* tech stacks */}
         <motion.div
           className={`bg-white flex items-center justify-center shadowPlane0 shadow-gray-200  w-14 h-14 rounded-full absolute -top-6 left-24 py-2 px-2`}
         >

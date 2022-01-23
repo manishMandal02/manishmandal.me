@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#7B1AF8',
+          DEFAULT: '#3e2ddf',
         },
       },
       borderWidth: {
