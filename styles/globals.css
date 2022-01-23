@@ -9,12 +9,15 @@ body {
 }
 
 .shadowPlane0 {
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: #cadae7 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
 }
 .shadowPlane1 {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: #00000029 0px 0px 4px;
 }
 
-.color {
+.shadowPlane2 {
+  box-shadow: #b8bec4 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
+}
+.primaryColor {
   color: #3e2ddf;
 }

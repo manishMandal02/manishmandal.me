@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div>
+    <div className='ml-20'>
       <motion.div
-        className='m-0 mt-6 ml-6 flex items-center font-medium text-primary text-xl tracking-wide '
+        className='m-0 mt-0  flex items-center font-medium text-primary text-xl tracking-wide '
         //   variants={introNameVariant}
         //   initial='initial'
         //   animate='animate'
@@ -22,12 +22,16 @@ const About = () => {
         </motion.span>{' '}
         &nbsp; About me
       </motion.div>
-      <p className='text-lg leading-7 font-medium  text-gray-900 py-2 px-5 mt-4 border-l-2 border-primary border-opacity ml-6'>
-        I am a self-thought developer from Bangalore, India <br />
-        Experienced in using JavaScript and its ecosystem, <br />
-        namely React & NodeJs to develop applications. <br />
-        I have spent a significant amount of time developing and <br />
-        nurturing my skills.
+      <p className=' text-lg leading-7 font-medium  text-gray-900 py-6 px-6 mt-8 border-2 border-primary border-opacity-20 rounded-xl shadowPlane2'>
+        I am a self-thought developer from Bangalore, India. <br />
+        Experienced in using JavaScript and its ecosystem, namely
+        <br />
+        React & NodeJs to develop applications. <br />
+        <br />
+        I have spent a significant amount of time developing and
+        <br />
+        and nurturing my skills and always looking for opportunities <br />
+        to apply them
       </p>
     </div>
   );

@@ -5,6 +5,7 @@ import AboutMe from '../components/aboutMe/Index';
 
 import Header from '../components/Header';
 import HeroSection from '../components/landingSection/Index';
+import MyProjects from '../components/myProjects';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <HeroSection />
       {/* About Me */}
       <AboutMe />
+      <MyProjects />
     </div>
   );
 }

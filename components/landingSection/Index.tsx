@@ -33,7 +33,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className='flex w-full mt-36  h-full'
+      className='flex w-screen mt-0  h-screen'
       // style={{ backgroundImage: 'url(/geo-bg.svg)', backgroundAttachment: 'fixed' }}
     >
       {/* Left container */}
