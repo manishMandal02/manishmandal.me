@@ -31,14 +31,14 @@ const MainTitle: React.FC<Props> = ({ controls }) => {
         </motion.span>{' '}
         &nbsp; Hello, I am Manish Mandal
       </motion.p>
-      <motion.p
+      <motion.h1
         className='text-7xl font-extrabold text-slate-600 leading- tracking-wide'
         variants={introTitleVariant}
         initial='initial'
         animate='animate'
       >
         FullStack Web Developer <span className='-ml-3 text-xl'>🟠🟢🟣</span>
-      </motion.p>
+      </motion.h1>
     </>
   );
 };

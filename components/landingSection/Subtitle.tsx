@@ -13,7 +13,7 @@ const Subtitle: React.FC<Props> = ({ controls }) => {
     <>
       <motion.div className='flex -ml-3 mt-14 text-3xl font-semibold text-slate-600 mb-2'>
         {mainSkills.map((skill, i) => (
-          <motion.p
+          <motion.h2
             key={skill + '-' + i}
             className='m-0 ml-3'
             variants={subTitleVariant}
@@ -23,7 +23,7 @@ const Subtitle: React.FC<Props> = ({ controls }) => {
           >
             {skill}
             <span className='text-4xl'>.</span>
-          </motion.p>
+          </motion.h2>
         ))}
       </motion.div>
     </>

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='ml-20'>
       <motion.div
-        className='m-0 mt-0  flex items-center font-medium text-primary text-xl tracking-wide '
+        className='m-0 mt-0  flex items-center font-semibold text-primary text-xl tracking-wide '
         //   variants={introNameVariant}
         //   initial='initial'
         //   animate='animate'
@@ -22,16 +22,23 @@ const About = () => {
         </motion.span>{' '}
         &nbsp; About me
       </motion.div>
-      <p className=' text-lg leading-7 font-medium  text-gray-900 py-6 px-6 mt-8 border-2 border-primary border-opacity-20 rounded-xl shadowPlane2'>
-        I am a self-thought developer from Bangalore, India. <br />
-        Experienced in using JavaScript and its ecosystem, namely
+      <p className=' m-0 text-xl font-medium text-slate-700 tracking-normal mt-6 lead'>
+        🤵 Manish Mandal &nbsp; &nbsp; 📌 Bangalore, India
+      </p>
+      <h2 className='text-xl font-semibold text-slate-700  tracking-wide mt-5 '>
+        <span className='text-xl'>👉 </span>I help people turn ideas into functional and interactive <br />{' '}
+        &nbsp; &nbsp; &nbsp; products.
+      </h2>
+      <p className=' text-base leading-6 font-medium  text-gray-700  pt-2 pb-3 px-4 mt-5 ml-2 border-l-3 border-primary border-opacity-80'>
+        Self-thought developer Experienced in using JavaScript
         <br />
-        React & NodeJs to develop applications. <br />
-        <br />
-        I have spent a significant amount of time developing and
-        <br />
-        and nurturing my skills and always looking for opportunities <br />
-        to apply them
+        and its ecosystem, namely React & NodeJs to develop <br /> applications. <br />
+        <p className='mt-1'>
+          I have spent a significant amount of time developing and
+          <br />
+          and nurturing my skills and always looking for opportunities <br />
+          to apply them
+        </p>
       </p>
     </div>
   );
