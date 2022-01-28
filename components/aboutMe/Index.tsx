@@ -13,7 +13,7 @@ const AboutMe = () => {
           backgroundRepeat: 'repeat',
         }}
       ></div>
-      <div className=' relative flex justify-around mt-24 my-10   px-16 overflow-hidden '>
+      <div className=' relative flex justify-around mt-20 my-10   px-16 overflow-hidden '>
         <About />
         <TechSystem />
       </div>

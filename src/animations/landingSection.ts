@@ -1,7 +1,7 @@
 const planeVariants = {
   initial: {
-    x: -1400,
-    y: -500,
+    x: -1800,
+    y: -600,
     rotateX: 30,
     rotateZ: 20,
   },
@@ -9,7 +9,7 @@ const planeVariants = {
     y: 2,
     x: 1,
     rotateX: 10,
-    rotateZ: -1,
+    rotateZ: -4,
     transition: {
       delay: 1,
       duration: 2,
@@ -25,14 +25,14 @@ const planeVariants = {
   },
   whileInView: {
     y: [2, -8, 2],
-    x: [1, -15, 1],
+    x: [1, -50, 1],
     rotateX: [10, -25, 10],
-    rotateZ: [-1, 2, -1],
+    rotateZ: [-4, 4, -4],
     // rotateY: [-10, 20, -10],
     transition: {
-      stiffness: 150,
+      stiffness: 140,
       repeat: Infinity,
-      duration: 2.4,
+      duration: 3,
       type: 'spring',
     },
   },
