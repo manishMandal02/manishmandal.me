@@ -6,14 +6,14 @@ const AboutMe = () => {
   return (
     <div className='overflow-x-hidden'>
       <div
-        className='relative h-32  w-full '
+        className='relative h-28  w-full '
         style={{
           backgroundImage: 'url(/wave-bg.svg)',
           backgroundPosition: 'top',
           backgroundRepeat: 'repeat',
         }}
       ></div>
-      <div className=' relative flex justify-around mt-20 my-10   px-16 overflow-hidden '>
+      <div className=' relative flex justify-around mt-20 my-10 px-16 overflow-hidden '>
         <About />
         <TechSystem />
       </div>

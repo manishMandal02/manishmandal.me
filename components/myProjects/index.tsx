@@ -1,23 +1,35 @@
 import React from 'react';
+import FeaturedProductCard from './FeaturedProductCard';
+
+import projectData from '../../src/assets/projectData.json';
+import ProductCard from './ProductCard';
 
 const MyProjects = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden w-full'>
       <div
-        className=' h-32 mt-20 w-full'
+        className=' h-28 mt-20'
         style={{
           backgroundImage: 'url(/wave-bg.svg)',
           backgroundPosition: 'bottom',
           backgroundRepeat: 'repeat',
         }}
       ></div>
-      <div className='relative h-36  w-full '></div>
-      <div className=' relative flex justify-around mt-0 py-10 h-96 px-16 overflow-hidden '></div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore dicta magnam labore assumenda nemo
-        consequuntur asperiores ducimus adipisci facere odio, repudiandae ipsum dignissimos delectus in ea
-        debitis enim quo a!
-      </p>
+      <div className=''>
+        <div className='mt-12 py-10  flex flex-col w-full items-center justify-center '>
+          {projectData.map((data, i) => (
+            <FeaturedProductCard id={data.title + i + ''} {...data} isFlipped={i % 2 !== 0} />
+          ))}
+          <div className='mt-16 w-full flex flex-col items-center justify-center'>
+            <p className='text-xl font-medium text-slate-700 mb-8'>Other Projects 👇</p>
+            <div className='flex flex-wrap  items-center justify-center w-2/3'>
+              {projectData.map((data, i) => (
+                <ProductCard id={data.title + i + ''} {...data} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
