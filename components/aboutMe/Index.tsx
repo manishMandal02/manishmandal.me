@@ -1,18 +1,12 @@
 import React from 'react';
+import Divider from '../UI/Divider';
 import About from './About';
 import TechSystem from './TechSystem';
 
 const AboutMe = () => {
   return (
     <div className='overflow-x-hidden'>
-      <div
-        className='relative h-28  w-full '
-        style={{
-          backgroundImage: 'url(/wave-bg.svg)',
-          backgroundPosition: 'top',
-          backgroundRepeat: 'repeat',
-        }}
-      ></div>
+      <Divider />
       <div className=' relative flex justify-around mt-20 my-10 px-16 overflow-hidden '>
         <About />
         <TechSystem />

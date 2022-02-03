@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import AboutMe from '../components/aboutMe/Index';
+import ContactMe from '../components/contactMe/Index';
 
 // components
 
@@ -19,6 +20,7 @@ export default function Home() {
       {/* About Me */}
       <AboutMe />
       <MyProjects />
+      <ContactMe />
     </div>
   );
 }
