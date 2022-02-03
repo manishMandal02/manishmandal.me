@@ -33,11 +33,11 @@ const HeroSection = () => {
 
   return (
     <div
-      className='flex w-screen mt-0  h-screen'
+      className='flex w-screen -mt-10  h-screen'
       // style={{ backgroundImage: 'url(/geo-bg.svg)', backgroundAttachment: 'fixed' }}
     >
       {/* Left container */}
-      <div className='flex flex-col w-1/2 items-start justify-center py-12 ml-64 relative'>
+      <div className='flex flex-col w-1/2 items-start justify-center py-12  mt-10 ml-64 relative'>
         <MainTitle controls={titleControls} />
         <Subtitle controls={subTitleControls} />
         {/* Email */}

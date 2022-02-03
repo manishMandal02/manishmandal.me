@@ -16,24 +16,22 @@ const ContactMe = () => {
           <MyEmail />
         </div>
         <p className='m-0 mt-8 font-medium text-lg text-slate-700 text-center leading-snug'>
-          You can stay on touch with me on{' '}
+          You can stay in touch with me on &nbsp;
           <a
             href='https://twitter.com/manishjmandal'
             target='_blank'
             rel='noreferrer'
             className='text-sky-500'
           >
-            {' '}
             Twitter
-          </a>{' '}
-          &{' '}
+          </a>
+          &
           <a
             href='https://www.linkedin.com/in/manish-mandal/'
             target='_blank'
             rel='noreferrer'
             className='text-blue-600'
           >
-            {' '}
             LinkedIn
           </a>
           , <br />I post most of my work on these platforms

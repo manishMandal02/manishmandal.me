@@ -16,6 +16,9 @@ module.exports = {
       width: {
         100: '64rem',
       },
+      spacing: {
+        18: '12%',
+      },
     },
   },
   plugins: [],

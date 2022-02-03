@@ -13,16 +13,15 @@ interface Props {
 
 const ProductCard: React.FC<Props> = ({ id, title, subTitle, tags, tech, github, link }) => {
   return (
-    <div key={id} className='w-80 py-2 px-3 ml-3 border-2 border-primary shadow-md rounded '>
-      <p className='tex-2xl  text-slate-600 font-semibold text-center mt-2 tracking-wide'>{title}</p>
+    <div key={id} className='w-80 py-3 px-3 ml-3 border-2 border-primary shadow-md rounded '>
+      <p className='m-0 tex-2xl  text-slate-600 font-semibold text-center mt-2 tracking-wide'>{title}</p>
       <p className='text-sm text-slate-600 font-medium mt-2'>{subTitle}</p>
-      <p className='text-xs font-medium text-slate-600 leading mt-3 mb-2'>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente,
-        enim aliquam maxime animi facere.
+      <p className='text-sm  text-slate-600 font-medium leading mt-3 mb-2'>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.
       </p>
-      <div className='w-full flex flex-wrap -ml-2 mt-1'>
+      <div className='w-full flex flex-wrap -ml-2 mt-4 -mb-2'>
         {tech.map((tech, i) => (
-          <span key={tech + i} className='m-0 leading-snug ml-2  rounded-full font-medium text-sm'>
+          <span key={tech + i} className='m-0 -mt-px leading-snug font-medium ml-2 opacity-80 text-sm'>
             {tech}
           </span>
         ))}
