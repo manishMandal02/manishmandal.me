@@ -31,7 +31,7 @@ const About = () => {
       </h2>
       <div className='w-1 h-44 bottom-0  absolute bg-gradient-to-b from-cyan-500 to-blue-400 '></div>
       <p className=' text-base leading-6 font-medium  text-gray-700  pt-2 pb-3 px-2 mt-5 ml-2'>
-        Self-thought developer Experienced in using{' '}
+        Self-thought web developer Experienced in using{' '}
         <span className='bg-yellow-300 px-1 rounded-sm'> JavaScript</span>
         <br />
         and its ecosystem, namely <span className='bg-cyan-300 px-1 rounded-sm'> React</span> &{' '}

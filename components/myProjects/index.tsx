@@ -16,7 +16,7 @@ const MyProjects = () => {
           ))}
           <div className='mt-16 w-full flex flex-col items-center justify-center'>
             <div className='relative'>
-              <p className='text-xl font-medium text-slate-700 mb-8'>Other Projects 👇</p>
+              <p className='text-xl font-medium text-slate-600 mb-7'>Other Projects 👇</p>
             </div>
             <div className='flex flex-wrap  items-center justify-center w-2/3'>
               {projectData.map((data, i) => (

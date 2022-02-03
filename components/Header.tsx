@@ -6,7 +6,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <nav className='h-20  overflow-hidden flex items-center justify-around py-8 fixed top-0 w-full  bg-white z-50 shadow-sm shadow-gray-50 '>
+    <nav className='h-20  overflow-hidden flex items-center justify-around py-8 absolute top-0 w-full  bg-white z-50 shadow-sm shadow-gray-50 '>
       <Link href={'/'}>
         <Image src={'/m-logo.svg'} className='cursor-pointer' width={60} height={60} alt='manish-mandal' />
       </Link>
