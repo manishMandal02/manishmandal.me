@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 import Navbar from '../components/UI/Navbar';
 import HeroSection from '../components/landingSection/Index';
 import MyProjects from '../components/myProjects/index';
-import ContactMe from '../components/contactMe/index';
+import ContactMe from '../components/contactMe/Index';
 import AboutMe from '../components/aboutMe/Index';
 
 export default function Home() {
