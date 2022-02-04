@@ -4,10 +4,10 @@ import { NextSeo } from 'next-seo';
 // components
 
 import Navbar from '../components/UI/Navbar';
-import HeroSection from '../components/landingSection/index';
+import HeroSection from '../components/landingSection/Index';
 import MyProjects from '../components/myProjects/index';
 import ContactMe from '../components/contactMe/index';
-import AboutMe from '../components/aboutMe/index';
+import AboutMe from '../components/aboutMe/Index';
 
 export default function Home() {
   return (
