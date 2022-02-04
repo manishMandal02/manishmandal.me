@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import AboutMe from '../components/aboutMe/Index';
-import ContactMe from '../components/contactMe/index';
 import { NextSeo } from 'next-seo';
 
 // components
@@ -8,6 +7,7 @@ import { NextSeo } from 'next-seo';
 import Navbar from '../components/UI/Navbar';
 import HeroSection from '../components/landingSection/Index';
 import MyProjects from '../components/myProjects';
+import ContactMe from '../components/contactMe';
 
 export default function Home() {
   <NextSeo
