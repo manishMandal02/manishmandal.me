@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { inViewVariants } from '../../src/animations/landingSection';
 import MyEmail from '../landingSection/MyEmail';
 import Divider from '../UI/Divider';
 import SectionHeader from '../UI/SectionHeader';
+import SocialLinks from '../UI/SocialLinks';
 
 const ContactMe = () => {
   return (
@@ -36,23 +36,8 @@ const ContactMe = () => {
           </a>
           , <br />I post most of my work on these platforms
         </p>
-        <div className='flex items-center justify-around w-24 mt-4'>
-          <a
-            href='https://twitter.com/manishjmandal'
-            target='_blank'
-            rel='noreferrer'
-            className='group hover:bg-sky-400  px-2 py-2  rounded-full transition-all duration-400'
-          >
-            <FaTwitter className='group-hover:text-white text-sky-400 text-2xl transition-all duration-300' />
-          </a>
-          <a
-            href='https://www.linkedin.com/in/manish-mandal/'
-            target='_blank'
-            rel='noreferrer'
-            className='group hover:bg-blue-500  px-2 py-2  rounded-full transition-all duration-400'
-          >
-            <FaLinkedinIn className='group-hover:text-white text-blue-500 text-2xl transition-all duration-300' />
-          </a>
+        <div className='mt-1 w-24'>
+          <SocialLinks />
         </div>
         <p className='mt-12 mb-1 opacity-50 text-black tracking-wider text-base'>
           Designed & Built by Manish Mandal ©️
