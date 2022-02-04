@@ -34,7 +34,7 @@ const MyProjects = () => {
             </div>
             <div className='flex flex-wrap  items-center justify-center w-2/3'>
               {projectData.map((data, i) => (
-                <ProductCard id={data.title + i + ''} {...data} />
+                <ProductCard id={data.title + i.toString()} {...data} />
               ))}
             </div>
           </div>
