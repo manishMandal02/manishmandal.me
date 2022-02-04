@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaFacebookF, FaLinkedin, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import Header from '../Header';
+import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { inViewVariants } from '../../src/animations/landingSection';
 import MyEmail from '../landingSection/MyEmail';
 import Divider from '../UI/Divider';
 import SectionHeader from '../UI/SectionHeader';
@@ -13,7 +13,7 @@ const ContactMe = () => {
         <SectionHeader header='Say hello 👋' />
         <p className='m-0 mt-5 font-semibold text-5xl text-slate-700'>Lets Get In Touch!</p>
         <div className='-mt-8'>
-          <MyEmail />
+          <MyEmail variants={inViewVariants} />
         </div>
         <p className='m-0 mt-8 font-medium text-lg text-slate-700 text-center leading-snug'>
           You can stay in touch with me on &nbsp;
@@ -25,14 +25,14 @@ const ContactMe = () => {
           >
             Twitter
           </a>
-          &
+          &nbsp; &
           <a
             href='https://www.linkedin.com/in/manish-mandal/'
             target='_blank'
             rel='noreferrer'
             className='text-blue-600'
           >
-            LinkedIn
+            &nbsp; LinkedIn
           </a>
           , <br />I post most of my work on these platforms
         </p>

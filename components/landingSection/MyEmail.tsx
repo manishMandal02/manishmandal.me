@@ -1,8 +1,13 @@
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import React, { useState } from 'react';
 import { emailContainerVariant, introTitleVariant } from '../../src/animations/landingSection';
 
-const MyEmail = () => {
+interface Props {
+  variants?: Variants;
+  whileInView?: boolean;
+}
+
+const MyEmail: React.FC<Props> = ({ variants, whileInView }) => {
   const [isCopied, setIsCopied] = useState<boolean>(false);
 
   // copy email
@@ -21,9 +26,10 @@ const MyEmail = () => {
       <motion.div
         className='relative group flex justify-center items-center mt-16 border-2 border-primary cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
         onClick={copyEmailHandler}
-        variants={emailContainerVariant}
+        variants={variants ? undefined : emailContainerVariant}
         initial='initial'
-        animate='animate'
+        animate={!whileInView ? 'animate' : ''}
+        whileInView={whileInView ? 'animate' : ''}
       >
         <div className='hidden group-hover:flex m-0 p-0 absolute w-full h-full font-medium text-gray-50 text-base items-center tracking-wide justify-center border-5 rounded-sm border-primary  bg-primary z-10 opacity-90'>
           {isCopied ? 'Copied!' : 'Click to Copy'}

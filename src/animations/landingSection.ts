@@ -157,6 +157,21 @@ const scrollDownVariant = {
   },
 };
 
+const inViewVariants = {
+  initial: {
+    opacity: 0,
+    y: 35,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      type: 'easeIn',
+    },
+  },
+};
+
 export {
   planeVariants,
   scrollDownContainerVariant,
@@ -166,4 +181,5 @@ export {
   introTitleVariant,
   subTitleVariant,
   emailContainerVariant,
+  inViewVariants,
 };

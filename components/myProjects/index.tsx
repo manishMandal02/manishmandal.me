@@ -5,15 +5,24 @@ import projectData from '../../src/assets/data/projectData.json';
 import ProductCard from './ProductCard';
 import Divider from '../UI/Divider';
 import SectionHeader from '../UI/SectionHeader';
+import { motion } from 'framer-motion';
+import { inViewVariants } from '../../src/animations/landingSection';
 
 const MyProjects = () => {
   return (
-    <div className='overflow-x-hidden w-full'>
+    <div className='overflow-hidden w-full'>
       <Divider />
       <div className='mt-24 flex flex-col'>
         <div className='ml-18'>
-          <SectionHeader header='Projects' />
-          <p className='text-slate-700 text-3xl font-semibold ml-12 mt-1'>Some Things I've Built.</p>
+          <SectionHeader header='Projects' whileInView variants={inViewVariants} />
+          <motion.p
+            className='text-slate-700 text-3xl font-semibold ml-12 mt-1'
+            variants={inViewVariants}
+            initial='initial'
+            whileInView='animate'
+          >
+            Some Things I've Built.
+          </motion.p>
         </div>
         <div className=' -mt-8 flex flex-col w-full items-center justify-center'>
           {projectData.map((data, i) => (
