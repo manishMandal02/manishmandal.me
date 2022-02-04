@@ -31,8 +31,10 @@ const MyEmail: React.FC<Props> = ({ variants, whileInView }) => {
         animate={!whileInView ? 'animate' : ''}
         whileInView={whileInView ? 'animate' : ''}
       >
-        <div className='hidden group-hover:flex m-0 p-0 absolute w-full h-full font-medium text-gray-50 text-base items-center tracking-wide justify-center border-5 rounded-sm border-primary  bg-primary z-10 opacity-90'>
-          {isCopied ? 'Copied!' : 'Click to Copy'}
+        <div className=' w-0  group-hover:w-full flex transition-all duration-300 m-0 p-0 absolute  h-full  items-center tracking-wide justify-center border-5 rounded-sm border-primary  bg-primary z-10 opacity-90'>
+          <p className='hidden  group-hover:block m-0 font-medium text-gray-50 text-base delay-100'>
+            {isCopied ? 'Copied!' : 'Click to Copy'}
+          </p>
         </div>
         <p className='m-0  border-r-3 border-primary  py-2 px-4 text-primary  outline-none text-4xl'>
           &#9993;

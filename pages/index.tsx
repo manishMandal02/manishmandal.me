@@ -15,6 +15,14 @@ export default function Home() {
       <Head>
         <title>Manish Mandal</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta
+          name='keywords'
+          content='A FullStack web developer, Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop applications.'
+        />
+        <meta
+          name='keywords'
+          content='Manish, Mandal, Manish Mandal, portfolio, web developer, fullstack developer, bangalore, JavaScript, react, node'
+        />
       </Head>
       <NextSeo
         title='Manish Mandal'
@@ -35,6 +43,7 @@ export default function Home() {
               alt: 'Manish Mandal',
             },
           ],
+          site_name: 'Manish Mandal',
         }}
         twitter={{
           handle: '@onemandal',
