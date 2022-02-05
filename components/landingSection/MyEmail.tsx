@@ -54,7 +54,7 @@ const MyEmail: React.FC<Props> = ({ variants, whileInView }) => {
             </p>
           )}
         </div>
-        <div className='flex w-full items-center justify-center'>
+        <div className='flex w-full items-center justify-center '>
           <p className='group-hover:text-lg ms:group-hover:text-  transition-all duration-500   m-0 flex text-xl ms:text-lg font-medium tracking-wide text-center justify-center text-slate-700 py-2 px-4 ms:px-2 '>
             manishmandalj@gmail.com
           </p>
