@@ -32,12 +32,9 @@ const HeroSection = () => {
   // title animation start
 
   return (
-    <div
-      className='flex w-screen -mt-6  h-screen'
-      // style={{ backgroundImage: 'url(/geo-bg.svg)', backgroundAttachment: 'fixed' }}
-    >
+    <div className='flex w-screen -mt-6   h-screen'>
       {/* Left container */}
-      <div className='flex flex-col w-1/2 items-start justify-center py-12  mt-10 ml-64 relative'>
+      <div className='flex flex-col w-1/2 ms:w-full items-start justify-center py-12  mt-10 ml-64 ms:ml-4 relative'>
         <MainTitle controls={titleControls} />
         <Subtitle controls={subTitleControls} />
         {/* Email */}
@@ -46,10 +43,7 @@ const HeroSection = () => {
         <ScrollDown />
       </div>
       {/* Right container */}
-      <div
-        className='flex flex-col w-1/2 items-center justify-center'
-        // style={{ backgroundImage: 'url(/geo-bg.svg)' }}
-      >
+      <div className='flex flex-col w-1/2 items-center justify-center ms:hidden'>
         <motion.div variants={planeVariants} initial='initial' animate={planeControls}>
           <Image src='/plane.svg' className='w-full' width={500} height={300} />
         </motion.div>

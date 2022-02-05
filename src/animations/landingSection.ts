@@ -134,19 +134,6 @@ const scrollDownContainerVariant = {
   },
 };
 const scrollDownVariant = {
-  // initial: {
-  //   // y: -200,
-  //   opacity: 0,
-  // },
-  // animate: {
-  //   y: 0,
-  //   opacity: 1,
-  //   transition: {
-  //     duration: 0.7,
-  //     type: 'spring',
-  //     stiffness: 130,
-  //   },
-  // },
   onHover: {
     y: 6,
     transition: {
@@ -166,7 +153,7 @@ const inViewVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.45,
       type: 'easeIn',
     },
   },

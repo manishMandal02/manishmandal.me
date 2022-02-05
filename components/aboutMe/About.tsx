@@ -11,6 +11,7 @@ const About = () => {
         variants={inViewVariants}
         initial='initial'
         whileInView='animate'
+        viewport={{ once: true }}
       >
         🤵 Manish Mandal &nbsp; &nbsp; 📌 Bangalore, India
       </motion.p>
@@ -19,6 +20,7 @@ const About = () => {
         variants={inViewVariants}
         initial='initial'
         whileInView='animate'
+        viewport={{ once: true }}
       >
         <span className='text-xl'>👉 </span>I help people turn ideas into functional and interactive <br />{' '}
         &nbsp; &nbsp; &nbsp; products.
@@ -28,12 +30,14 @@ const About = () => {
         variants={inViewVariants}
         initial='initial'
         whileInView='animate'
+        viewport={{ once: true }}
       ></motion.div>
       <motion.h3
         className=' text-base leading-6 font-medium  text-gray-700  pt-2 pb-3 px-2 mt-5 ml-2'
         variants={inViewVariants}
         initial='initial'
         whileInView='animate'
+        viewport={{ once: true }}
       >
         Self-thought web developer Experienced in using{' '}
         <span className='bg-yellow-300 px-1 rounded-sm'> JavaScript</span>

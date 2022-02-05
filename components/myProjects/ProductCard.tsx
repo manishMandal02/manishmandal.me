@@ -15,11 +15,6 @@ interface Props {
 }
 
 const ProductCard: React.FC<Props> = ({ id, title, subTitle, tags, tech, github, link, desc }) => {
-  // const hoverAnimation {
-  //   y: {
-  //     1
-  //   }
-  // }
   return (
     <motion.div
       key={id}
@@ -28,9 +23,9 @@ const ProductCard: React.FC<Props> = ({ id, title, subTitle, tags, tech, github,
       initial='initial'
       whileInView='animate'
       whileHover={{
-        y: -8,
+        y: -5,
         transition: {
-          duration: 0.1,
+          duration: 0.09,
           // type: 'spring',
           // stiffness: 125,
         },

@@ -7,11 +7,11 @@ interface Props {
 }
 
 const Subtitle: React.FC<Props> = ({ controls }) => {
-  const mainSkills = ['🎨Design', '👨‍💻Develop', '💹Market'];
+  const mainSkills = ['🎨 Design', '👨‍💻 Develop', '💹 Market'];
 
   return (
     <>
-      <motion.div className='flex -ml-3 mt-14 text-3xl font-semibold text-slate-600 mb-2'>
+      <motion.div className='flex -ml-3 mt-14 ms:mt-6 text-3xl ms:text-xl font-semibold text-slate-600 mb-2'>
         {mainSkills.map((skill, i) => (
           <motion.h2
             key={skill + '-' + i}
@@ -22,7 +22,7 @@ const Subtitle: React.FC<Props> = ({ controls }) => {
             animate={controls}
           >
             {skill}
-            <span className='text-4xl'>.</span>
+            <span className='text-3xl'>.</span>
           </motion.h2>
         ))}
       </motion.div>
