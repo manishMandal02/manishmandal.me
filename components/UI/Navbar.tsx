@@ -7,11 +7,11 @@ import SocialLinks from './SocialLinks';
 
 const Navbar = () => {
   return (
-    <nav className='h-20  overflow-hidden flex items-center justify-around py-8 pt-10 absolute top-0 w-full z-10 bg-white'>
+    <nav className='h-20  overflow-hidden flex items-center justify-around px-28 py-8 pt-10 absolute top-0 w-full z-10 bg-white'>
       <Link href={'/'}>
         <Image src={'/m-logo.svg'} className='cursor-pointer' width={60} height={60} alt='manish-mandal' />
       </Link>
-      <div className='-mr-44 flex items-center justify-center overflow-hidden'>
+      <div className='flex items-center justify-center overflow-hidden'>
         <Link href='/hi'>
           <p className='text-lg  text-slate-600 hover:text-black cursor-pointer'>AboutMe</p>
         </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
       {/* <button className='mr-28 flex items-center justify-center font-medium text-primary border-2 border-primary py-2 px-6 rounded-full hover:bg-primary hover:text-gray-50 duration-300 transition-all'>
         Say Hello
       </button> */}
-      <div className='w-24'>
+      <div className='w-24 mr-'>
         <SocialLinks github />
       </div>
     </nav>
