@@ -11,7 +11,7 @@ const Subtitle: React.FC<Props> = ({ controls }) => {
 
   return (
     <>
-      <motion.div className='flex -ml-3 mt-14 ms:mt-6 text-3xl ms:text-xl font-semibold text-slate-600 mb-2'>
+      <motion.div className='flex -ml-3 mt-14 ms:mt-10 text-3xl ms:text-xl font-semibold text-slate-600 mb-2'>
         {mainSkills.map((skill, i) => (
           <motion.h2
             key={skill + '-' + i}

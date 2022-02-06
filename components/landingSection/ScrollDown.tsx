@@ -22,7 +22,7 @@ const ScrollDown = () => {
       <AnimatePresence>
         {isVisible && (
           <motion.div
-            className='fixed bottom-8 left-2/4 flex items-center'
+            className='fixed  bottom-8 ms:bottom-4 left-2/4 ms:left-40 flex items-center ms:flex-col-reverse'
             variants={scrollDownContainerVariant}
             initial='initial'
             animate='animate'
@@ -32,11 +32,13 @@ const ScrollDown = () => {
             <motion.div
               variants={scrollDownVariant}
               whileHover='onHover'
-              className=' py-4 px-4 rounded-full shadow-md text-lg mr-4  scale-125 shadow-gray-300 cursor-pointer'
+              className=' py-4 px-4 rounded-full shadow-md text-lg mr-4 scale-125 ms:text-base ms:py-3 ms:px-3 shadow-gray-300 cursor-pointer '
             >
               <BsArrowsExpand />
             </motion.div>
-            <motion.p className='m-0 text-lg text-slate-500 font-medium cursor-default'>Scroll down</motion.p>
+            <motion.p className='m-0 ms:mb-1 text-lg ms:text-base text-slate-500 font-medium  cursor-default'>
+              Scroll down
+            </motion.p>
           </motion.div>
         )}
       </AnimatePresence>

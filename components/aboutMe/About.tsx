@@ -4,26 +4,29 @@ import SectionHeader from '../UI/SectionHeader';
 
 const About = () => {
   return (
-    <div className='ml-20'>
+    <div className='ml-20 ms:w-full ms:-ml-1 ms:mt-6'>
       <SectionHeader header='About me' whileInView variants={inViewVariants} />
       <motion.p
-        className=' m-0 text-xl font-medium text-slate-700 tracking-normal mt-8 lead'
+        className=' m-0 text-xl ms:text-lg font-medium text-slate-700 tracking-normal mt-8 ms:mt-3'
         variants={inViewVariants}
         initial='initial'
         whileInView='animate'
         viewport={{ once: true }}
       >
-        🤵 Manish Mandal &nbsp; &nbsp; 📌 Bangalore, India
+        🤵 Manish Mandal &nbsp; <span className='ms:hidden'>&nbsp;</span> 📌 Bangalore, India
       </motion.p>
       <motion.h2
-        className='text-xl font-semibold text-slate-700  tracking-wide mt-5 '
+        className='text-xl ms:text-base font-semibold text-slate-700  tracking-wide mt-5 ms:mt-3'
         variants={inViewVariants}
         initial='initial'
         whileInView='animate'
         viewport={{ once: true }}
       >
-        <span className='text-xl'>👉 </span>I help people turn ideas into functional and interactive <br />{' '}
-        &nbsp; &nbsp; &nbsp; products.
+        <span className='text-xl'>👉 </span>I help people turn ideas into functional and interactive{' '}
+        <span className='ms:hidden'>
+          <br />
+        </span>{' '}
+        <span className='ms:hidden'> &nbsp; &nbsp; &nbsp;</span> products.
       </motion.h2>
       <motion.div
         className='w-1 h-44 bottom-0  absolute bg-gradient-to-b from-cyan-500 to-blue-400 '

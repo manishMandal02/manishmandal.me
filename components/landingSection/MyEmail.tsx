@@ -25,7 +25,7 @@ const MyEmail: React.FC<Props> = ({ variants, whileInView }) => {
   return (
     <>
       <motion.div
-        className='w-98 mb-2 ms:w-82 relative group flex justify-between items-center mt-16 border-2 border-primary cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
+        className='w-98 mb-2 ms:w-82 relative group flex justify-between items-center mt-16 ms:mt-12 border-2 border-primary cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
         onClick={copyEmailHandler}
         variants={variants ? undefined : emailContainerVariant}
         initial='initial'
