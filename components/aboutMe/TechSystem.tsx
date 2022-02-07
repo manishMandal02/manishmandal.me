@@ -35,7 +35,7 @@ const TechSystem = () => {
   ];
 
   return (
-    <div className='py-4 px-4 w-1/2 ms:w-full flex items-center justify-center -mr-12 ms:mr-0 ms:mt-8 z-30'>
+    <div className='py-4 px-4 w-1/2 ms:w-full flex items-center justify-center -mr-12 ms:mr-0 ms:mt-12 z-30'>
       <div className='absolute linedBorder w-48 h-48 z-20 rounded-full'></div>
       <div className='absolute  w-28 h-28 z-20 rounded-full linedBorder'></div>
       {/* tech stacks */}

@@ -5,8 +5,15 @@ import SectionHeader from '../UI/SectionHeader';
 import Spacing from '../UI/Spacing';
 
 const About = () => {
+  const space = <span className='mr-1'></span>;
+  const spaceMS = <span className='hidden ms:block mr-1'></span>;
+  const newLine = (
+    <span className='ms:hidden'>
+      <br />
+    </span>
+  );
   return (
-    <div className='ml-20 ms:w-full ms:-ml-1 ms:mt-12'>
+    <div className='ml-20 ms:w-full ms:-ml-1 ms:mt-14'>
       <SectionHeader header='About me' whileInView variants={inViewVariants} />
       <motion.p
         className=' m-0 text-xl ms:text-lg font-medium text-slate-700 tracking-normal mt-8 ms:mt-3'
@@ -15,7 +22,7 @@ const About = () => {
         whileInView='animate'
         viewport={{ once: true }}
       >
-        🤵 Manish Mandal &nbsp; <Spacing /> 📌 Bangalore, India
+        🤵 Manish Mandal &nbsp; {space} 📌 Bangalore, India
       </motion.p>
       <motion.h2
         className='text-xl ms:text-base font-semibold text-slate-700  tracking-wide mt-5 ms:mt-3 '
@@ -30,7 +37,7 @@ const About = () => {
       </motion.h2>
       {/* divider */}
       <motion.div
-        className='w-1 h-44 ms:h-64 bottom-0 ms:-bottom-4  absolute bg-gradient-to-b from-cyan-500 to-blue-400 '
+        className='w-1 h-44 ms:h-56 bottom-0 ms:-bottom-0  absolute bg-gradient-to-b from-cyan-500 to-blue-400 '
         variants={inViewVariants}
         initial='initial'
         whileInView='animate'
@@ -44,15 +51,13 @@ const About = () => {
         viewport={{ once: true }}
       >
         Self-thought web developer Experienced in using{' '}
-        <span className='bg-yellow-300 px-1 rounded-sm'> JavaScript </span> <span className='mr-1'></span>
-        <span className=' ms:hidden'>
-          <br />
-        </span>
+        <span className='bg-yellow-300 px-1 rounded-sm'> JavaScript </span> {space}
+        {newLine}
         and its ecosystem, namely <span className='bg-cyan-300 px-1 rounded-sm'> React</span> &{' '}
         <span className='bg-green-300 px-1 rounded-sm'> NodeJs</span> to develop <br /> applications. <br />
         <p className='mt-1'>
-          I have spent a significant amount of time developing and
-          <br />
+          I have spent a significant amount of time developing and {space}
+          {newLine}
           nurturing my skills and always looking for opportunities <br />
           to apply them.
         </p>

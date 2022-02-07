@@ -19,7 +19,7 @@ const SectionHeader: React.FC<Props> = ({ variants, header, lineVariants, whileI
         whileInView={whileInView ? 'animate' : ''}
       >
         <motion.span
-          className=' font-extrabold -mt-5 font-mono  tracking-tighter mr-3'
+          className=' font-extrabold -mt-5 font-mono  tracking-tighter mr-2'
           variants={lineVariants}
           initial={lineVariants ? 'initial' : ''}
           animate={lineVariants ? 'animate' : ''}

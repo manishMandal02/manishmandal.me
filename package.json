@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "framer-motion": "^5.5.8",
+    "nanoid": "^3.2.0",
     "next": "latest",
     "next-seo": "^5.1.0",
     "react": "^17.0.2",

@@ -9,7 +9,7 @@ const SocialLinks: React.FC<Props> = ({ github }) => {
   return (
     <div className='flex items-center justify-around w-full'>
       <a
-        href='https://twitter.com/manishjmandal'
+        href='https://twitter.com/onemandal'
         target='_blank'
         rel='noreferrer'
         className='group hover:bg-sky-400  px-2 py-2  rounded-full transition-all duration-400'

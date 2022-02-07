@@ -14,11 +14,11 @@ interface Props {
   tech: string[];
 }
 
-const ProductCard: React.FC<Props> = ({ id, title, subTitle, tags, tech, github, link, desc }) => {
+const ProductCard: React.FC<Props> = ({ id, title, subTitle, tech, github, link, desc }) => { 
   return (
     <motion.div
+      className='w-80 mt-4 ms:w-full py-3 px-3 ml-3 border-2 border-cyan-400 shadow-sm rounded cursor-pointer transition-all duration-200 overflow-hidden'
       key={id}
-      className='w-80 py-3 px-3 ml-3 border-2 border-cyan-400 shadow-md rounded cursor-pointer transition-all duration-200 overflow-hidden'
       variants={inViewVariants}
       initial='initial'
       whileInView='animate'
@@ -31,8 +31,8 @@ const ProductCard: React.FC<Props> = ({ id, title, subTitle, tags, tech, github,
         },
       }}
     >
-      <p className='m-0 tex-2xl  text-slate-600 font-semibold text-center mt-2 tracking-wide'>{title}</p>
-      <p className='text-sm text-slate-600 font-medium mt-2'>{subTitle}</p>
+      <p className='m-0 text-xl text-slate-700 font-semibold text-center mt-1 tracking-wide'>{title}</p>
+      <p className='text-base  text-slate-700 font-medium mt-1'>{subTitle}</p>
       <p className='text-sm  text-slate-600 font-medium leading mt-3 mb-2'>{desc}</p>
       <div className='w-full flex flex-wrap -ml-2 mt-4 -mb-2'>
         {tech.map((tech, i) => (
@@ -41,18 +41,23 @@ const ProductCard: React.FC<Props> = ({ id, title, subTitle, tags, tech, github,
           </span>
         ))}
       </div>
-      <div className='flex justify-end items-center text-slate-600 overflow-hidden'>
+      <div className='flex justify-end items-center mt-1 text-slate-600 overflow-hidden'>
         {github && (
           <a
             href={github && github}
             target='_blank'
             rel='noreferrer'
-            className='text-lg cursor-pointer mr-3 hover:text-slate-900'
+            className='text-xl cursor-pointer mr-3 ms:mr-4 hover:text-slate-900'
           >
             <FaGithub className='' />
           </a>
         )}
-        <a href={link} target='_blank' rel='noreferrer' className='cursor-pointer mr-1 hover:text-slate-900'>
+        <a
+          href={link}
+          target='_blank'
+          rel='noreferrer'
+          className='cursor-pointer mr-1 text-lg hover:text-slate-900'
+        >
           <FaExternalLinkAlt className='' />
         </a>
       </div>

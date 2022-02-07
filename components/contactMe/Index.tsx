@@ -9,20 +9,17 @@ const ContactMe = () => {
   return (
     <>
       <Divider />
-      <div className='mt-16 w-full mx-6 flex flex-col items-center justify-center overflow-hidden '>
+      <div className='mt-16 ms:mt-14 ms:-ml-1 w-full mx-6 flex flex-col items-center justify-center overflow-hidden '>
         <SectionHeader header='Say hello 👋' />
-        <p className='m-0 mt-5 font-semibold text-5xl text-slate-700'>Lets Get In Touch!</p>
+        <p className='m-0 mt-5 ms:mt-3 font-semibold text-5xl ms:text-4xl text-slate-700'>
+          Lets Get In Touch!
+        </p>
         <div className='-mt-8'>
           <MyEmail variants={inViewVariants} />
         </div>
-        <p className='m-0 mt-8 font-medium text-lg text-slate-700 text-center leading-snug'>
+        <p className='m-0 mt-8 ms:mt-4 ms:px-2  font-medium  text-lg ms:text-lg text-slate-700 text-center leading-snug'>
           You can stay in touch with me on &nbsp;
-          <a
-            href='https://twitter.com/manishjmandal'
-            target='_blank'
-            rel='noreferrer'
-            className='text-sky-500'
-          >
+          <a href='https://twitter.com/onemandal' target='_blank' rel='noreferrer' className='text-sky-500'>
             Twitter
           </a>
           &nbsp; &
@@ -39,7 +36,7 @@ const ContactMe = () => {
         <div className='mt-1 w-24'>
           <SocialLinks />
         </div>
-        <p className='mt-12 mb-1 opacity-50 text-black tracking-wider text-base'>
+        <p className='mt-12 mb-1  text-gray-600 opacity-80 tracking-wider text-base'>
           Designed & Built by Manish Mandal ©️
           <span className='text-sm'> {new Date().getFullYear()}</span>
         </p>
