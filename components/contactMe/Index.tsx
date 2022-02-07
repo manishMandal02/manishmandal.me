@@ -11,7 +11,7 @@ const ContactMe = () => {
       <Divider />
       <div className='mt-16 ms:mt-14 ms:-ml-1 w-full mx-6 flex flex-col items-center justify-center overflow-hidden '>
         <SectionHeader header='Say hello 👋' />
-        <p className='m-0 mt-5 ms:mt-3 font-semibold text-5xl ms:text-4xl text-slate-700'>
+        <p className='m-0 mt-5 ms:mt-3 font-semibold text-5xl ms:text-4xl text-slate-700' id='contact'>
           Lets Get In Touch!
         </p>
         <div className='-mt-8'>
@@ -37,8 +37,8 @@ const ContactMe = () => {
           <SocialLinks />
         </div>
         <p className='mt-12 mb-1  text-gray-600 opacity-80 tracking-wider text-base'>
-          Designed & Built by Manish Mandal ©️
-          <span className='text-sm'> {new Date().getFullYear()}</span>
+          Designed & Built by Manish Mandal
+          {/* <span className='text-sm'> {new Date().getFullYear()}</span> */}
         </p>
       </div>
     </>

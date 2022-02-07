@@ -21,6 +21,7 @@ const MyProjects = () => {
             variants={inViewVariants}
             initial='initial'
             whileInView='animate'
+            id='projects'
           >
             Some Things I've Built.
           </motion.p>
