@@ -1,5 +1,4 @@
 import React from 'react';
-import { inViewVariants } from '../../src/animations/landingSection';
 import MyEmail from '../landingSection/MyEmail';
 import Divider from '../UI/Divider';
 import SectionHeader from '../UI/SectionHeader';
@@ -15,7 +14,7 @@ const ContactMe = () => {
           Lets Get In Touch!
         </p>
         <div className='-mt-8'>
-          <MyEmail variants={inViewVariants} />
+          <MyEmail />
         </div>
         <p className='m-0 mt-8 ms:mt-4 ms:px-2  font-medium  text-lg ms:text-lg text-slate-700 text-center leading-snug'>
           You can stay in touch with me on &nbsp;

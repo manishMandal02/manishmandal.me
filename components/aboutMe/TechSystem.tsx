@@ -1,19 +1,9 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
+import { techStackContainerVariant } from '../../src/animations/landingSection';
 
 const TechSystem = () => {
-  const techStackContainerVariant = {
-    animate: {
-      rotate: 360,
-      transition: {
-        repeat: Infinity,
-        duration: 45,
-        ease: 'linear',
-      },
-    },
-  };
-
   const techStackVariant = {
     animate0: {
       // rotate: -360,s

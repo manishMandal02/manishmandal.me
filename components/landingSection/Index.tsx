@@ -18,7 +18,7 @@ const HeroSection = () => {
 
   // plane animation start
   const planeAnimationSequence = async () => {
-    await planeControls.start('animate');
+    planeControls.start('animate');
     planeControls.start('whileInView');
   };
   const titleAnimationSequence = async () => {

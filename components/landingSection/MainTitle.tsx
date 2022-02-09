@@ -17,15 +17,15 @@ const MainTitle: React.FC<Props> = ({ controls }) => {
         className='m-0 flex items-center font-semibold text-primary text-xl tracking-wide'
         variants={introNameVariant}
         initial='initial'
-        animate='animate'
-        // animate={controls}
+        // animate='animate'
+        animate={controls}
       >
         <motion.span
           className=' font-extrabold -mt-5 font-mono  tracking-tighter'
           variants={introNameLineVariant}
           initial='initial'
-          animate={controls}
-          // animate='animate'
+          // animate={controls}
+          animate='animate'
         >
           ____
         </motion.span>{' '}

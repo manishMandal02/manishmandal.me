@@ -1,33 +1,31 @@
-import { motion, VariantLabels, Variants } from 'framer-motion';
 import React from 'react';
+import { inViewAOSAnimations } from '../../src/animations/landingSection';
 
 interface Props {
   header: string;
-  variants?: Variants;
-  lineVariants?: Variants;
+
   whileInView?: boolean;
 }
 
-const SectionHeader: React.FC<Props> = ({ variants, header, lineVariants, whileInView }) => {
+const SectionHeader: React.FC<Props> = ({ header }) => {
   return (
     <>
-      <motion.div
+      <div
         className='m-0 mt-0  flex items-center font-semibold text-primary text-xl tracking-wide relative'
-        variants={variants}
-        initial={variants ? 'initial' : ''}
-        animate={variants && !whileInView ? 'animate' : ''}
-        whileInView={whileInView ? 'animate' : ''}
+        data-aos='slide-right'
+        data-aos-duration='600'
+        data-aos-mirror='true'
       >
-        <motion.span
+        <span
           className=' font-extrabold -mt-5 font-mono  tracking-tighter mr-2'
-          variants={lineVariants}
-          initial={lineVariants ? 'initial' : ''}
-          animate={lineVariants ? 'animate' : ''}
+          data-aos='slide-right'
+          data-aos-delay='250'
+          data-aos-mirror='true'
         >
           ____
-        </motion.span>
+        </span>
         {header}
-      </motion.div>
+      </div>
     </>
   );
 };

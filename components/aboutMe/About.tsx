@@ -1,54 +1,61 @@
 import { motion } from 'framer-motion';
-import { inViewVariants } from '../../src/animations/landingSection';
 import NewLine from '../UI/NewLine';
 import SectionHeader from '../UI/SectionHeader';
 import Spacing from '../UI/Spacing';
 
 const About = () => {
   const space = <span className='mr-1'></span>;
-  const spaceMS = <span className='hidden ms:block mr-1'></span>;
+  // const spaceMS = <span className='hidden ms:block mr-1'></span>;
   const newLine = (
     <span className='ms:hidden'>
       <br />
     </span>
   );
+
+  const animations = [
+    "data-aos='fade-up'",
+    "data-aos-duration='500'",
+    "data-aos-delay='150'",
+    "data-aos-mirror='true'",
+  ];
+
   return (
     <div className='ml-20 ms:w-full ms:-ml-1 ms:mt-14'>
-      <SectionHeader header='About me' whileInView variants={inViewVariants} />
-      <motion.p
+      <SectionHeader header='About me' />
+      <p
         className=' m-0 text-xl ms:text-lg font-medium text-slate-700 tracking-normal mt-8 ms:mt-3'
-        variants={inViewVariants}
-        initial='initial'
-        whileInView='animate'
-        viewport={{ once: true }}
+        data-aos='fade-up'
+        data-aos-duration='500'
+        data-aos-delay='150'
+        data-aos-mirror='true'
       >
         🤵 Manish Mandal &nbsp; {space} 📌 Bangalore, India
-      </motion.p>
-      <motion.h2
+      </p>
+      <h2
         className='text-xl ms:text-base font-semibold text-slate-700  tracking-wide mt-5 ms:mt-3 '
-        variants={inViewVariants}
-        initial='initial'
-        whileInView='animate'
-        viewport={{ once: true }}
+        data-aos='fade-up'
+        data-aos-duration='500'
+        data-aos-delay='150'
+        data-aos-mirror='true'
       >
         <span className='text-xl'>👉 </span>I help people turn ideas into functional and interactive{' '}
         <NewLine />
         <Spacing two /> <Spacing /> products.
-      </motion.h2>
+      </h2>
       {/* divider */}
-      <motion.div
+      <div
         className='w-1 h-44 ms:h-56 bottom-0 ms:-bottom-0  absolute bg-gradient-to-b from-cyan-500 to-blue-400 '
-        variants={inViewVariants}
-        initial='initial'
-        whileInView='animate'
-        viewport={{ once: true }}
-      ></motion.div>
-      <motion.h3
+        data-aos='fade-up'
+        data-aos-duration='600'
+        data-aos-delay='400'
+        data-aos-mirror='true'
+      ></div>
+      <h3
         className=' text-base leading-6 font-medium  text-gray-700  pt-2 pb-3 px-2 mt-5 ml-2'
-        variants={inViewVariants}
-        initial='initial'
-        whileInView='animate'
-        viewport={{ once: true }}
+        data-aos='fade-up'
+        data-aos-duration='500'
+        data-aos-delay='150'
+        data-aos-mirror='true'
       >
         Self-thought web developer Experienced in using{' '}
         <span className='bg-yellow-300 px-1 rounded-sm'> JavaScript </span> {space}
@@ -61,7 +68,7 @@ const About = () => {
           nurturing my skills and always looking for opportunities <br />
           to apply them.
         </p>
-      </motion.h3>
+      </h3>
     </div>
   );
 };

@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import { inViewVariants } from '../../src/animations/landingSection';
 
 interface Props {
   id: string;
@@ -28,16 +27,23 @@ const FeaturedProductCard: React.FC<Props> = ({
   id,
 }) => {
   return (
-    <motion.div
+    <div
       className={`h-72 ms:h-full w-100 ms:w-full flex ${
         isFlipped ? 'flex-row-reverse' : ''
       } ms:flex-col mt-20 ms:mt-12 ${isFlipped ? '-ml-16' : '-mr-16'} ms:ml-0 ms:mr-0 ms:px-2`}
       key={id}
-      variants={inViewVariants}
-      initial='initial'
-      whileInView='animate'
+      data-aos={isFlipped ? 'fade-left' : 'fade-right'}
+      data-aos-duration='500'
+      data-aos-delay='100'
+      data-aos-mirror='true'
+      data-aos-anchor-placement='top-bottom'
     >
-      <a href={link} className='w-3/6  ms:w-full bg-emerald-300 rounded-lg  group'>
+      <a
+        href={link}
+        target='_blank'
+        rel='noreferrer'
+        className='w-3/6  ms:w-full bg-emerald-300 rounded-lg  group'
+      >
         <img src={image} alt={title} className='w-full group-hover:opacity-90 transition-all duration-200' />
       </a>
       <div
@@ -87,7 +93,7 @@ const FeaturedProductCard: React.FC<Props> = ({
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

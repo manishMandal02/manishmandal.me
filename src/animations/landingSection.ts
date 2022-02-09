@@ -8,13 +8,16 @@ const planeVariants = {
   animate: {
     y: 2,
     x: 1,
+    // x: [-1500, -1000, -500, -100, 1],
+    // y: [-500, -100, 0, 50, 100, 2],
     rotateX: 10,
-    rotateZ: -4,
+    // rotateZ: -4,
     transition: {
-      delay: 1,
-      duration: 2,
+      delay: 0.2,
+      duration: 1,
       type: 'spring',
-      stiffness: 20,
+      ease: 'linear',
+      stiffness: 24,
       rotateZ: {
         duration: 2,
       },
@@ -24,10 +27,10 @@ const planeVariants = {
     },
   },
   whileInView: {
-    y: [2, -8, 2],
-    x: [1, -50, 1],
-    rotateX: [10, -25, 10],
-    rotateZ: [-4, 4, -4],
+    y: [2, -5, 2],
+    x: [1, -5, 1],
+    rotateX: [10, -22, 10],
+    rotateZ: [-1, 0, -1],
     // rotateY: [-10, 20, -10],
     transition: {
       stiffness: 140,
@@ -56,7 +59,7 @@ const introNameVariant = {
 };
 const introNameLineVariant = {
   initial: {
-    x: -400,
+    x: -450,
   },
   animate: {
     x: 0,
@@ -64,7 +67,7 @@ const introNameLineVariant = {
       duration: 0.4,
       type: 'spring',
       stiffness: 120,
-      delay: 2,
+      delay: 2.3,
     },
   },
 };
@@ -77,16 +80,17 @@ const introTitleVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.5,
-      duration: 0.8,
-      type: 'easeIn',
+      // delay: 0.2,
+      duration: 0.5,
+      type: 'spring',
+      stiffness: 120,
     },
   },
 };
 
 const subTitleVariant = {
   initial: {
-    x: -780,
+    x: -800,
   },
   animate: (i: number) => ({
     x: 0,
@@ -108,7 +112,7 @@ const emailContainerVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 3.5,
+      delay: 3.8,
       duration: 0.8,
       type: 'easeIn',
     },
@@ -144,20 +148,18 @@ const scrollDownVariant = {
   },
 };
 
-const inViewVariants = {
-  initial: {
-    opacity: 0,
-    y: 35,
-  },
+const techStackContainerVariant = {
   animate: {
-    opacity: 1,
-    y: 0,
+    rotate: 360,
     transition: {
-      duration: 0.45,
-      type: 'easeIn',
+      repeat: Infinity,
+      duration: 45,
+      ease: 'linear',
     },
   },
 };
+
+const inViewAOSAnimations = 'fade-right';
 
 export {
   planeVariants,
@@ -168,5 +170,6 @@ export {
   introTitleVariant,
   subTitleVariant,
   emailContainerVariant,
-  inViewVariants,
+  techStackContainerVariant,
+  inViewAOSAnimations,
 };

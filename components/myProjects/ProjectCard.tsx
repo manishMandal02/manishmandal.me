@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
-import { inViewVariants } from '../../src/animations/landingSection';
 
 interface Props {
   id: string;
@@ -16,21 +15,13 @@ interface Props {
 
 const ProductCard: React.FC<Props> = ({ id, title, subTitle, tech, github, link, desc }) => {
   return (
-    <motion.div
-      className='w-80 mt-4 ms:w-full py-3 px-3 ml-3 border-2 border-cyan-400 shadow-sm rounded  transition-all duration-200 overflow-hidden'
+    <div
+      className='w-80 mt-4 ms:w-full py-3 px-3 ml-3 border-2 border-primary shadow-sm rounded  transition-all duration-200 overflow-hidden'
       key={id}
-      variants={inViewVariants}
-      viewport={{ once: true }}
-      initial='initial'
-      whileInView='animate'
-      // whileHover={{
-      //   y: -5,
-      //   transition: {
-      //     duration: 0.09,
-      //     // type: 'spring',
-      //     // stiffness: 125,
-      //   },
-      // }}
+      data-aos='fade-up'
+      data-aos-duration='500'
+      // data-aos-delay='150'
+      data-aos-mirror='true'
     >
       <p className='m-0 text-xl text-slate-700 font-semibold text-center mt-1 tracking-wide'>{title}</p>
       <p className='text-base  text-slate-700 font-medium mt-1'>{subTitle}</p>
@@ -62,7 +53,7 @@ const ProductCard: React.FC<Props> = ({ id, title, subTitle, tech, github, link,
           <FaExternalLinkAlt className='' />
         </a>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
