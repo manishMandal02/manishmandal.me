@@ -32,9 +32,9 @@ const HeroSection = () => {
   // title animation start
 
   return (
-    <div className='flex w-screen -mt-6 ms:mt-12 h-screen ms: relative'>
+    <div className='flex w-screen -mt-12 ms:mt-12 h-screen ms: relative'>
       {/* Left container */}
-      <div className='flex flex-col w-1/2 ms:w-full items-start justify-center py-12 ms:py-8 mt-10 ms:-mt-16 ml-64 ms:ml-4 relative'>
+      <div className='flex flex-col w-1/2 ms:w-full items-start justify-center py-12 ms:py-8 mt-12 ms:-mt-16 ml-64 ms:ml-4 relative'>
         <MainTitle controls={titleControls} />
         <Subtitle controls={subTitleControls} />
         {/* Email */}

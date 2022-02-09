@@ -10,6 +10,7 @@ const Navbar = () => {
   const goToAboutMe = () => {
     scrollTo('about-me');
   };
+
   const goToProjects = () => {
     scrollTo('projects');
   };
@@ -32,20 +33,20 @@ const Navbar = () => {
           </p>
           <p
             onClick={goToProjects}
-            className=' cursor-pointer ml-5 text-xl hover:text-black    text-slate-600'
+            className=' cursor-pointer ml-5 text-lg hover:text-black    text-slate-600'
           >
             Projects
           </p>
           <a
             href={blogLink}
             target='_blank'
-            className=' cursor-pointer ml-5 text-xl hover:text-black    text-slate-600'
+            className=' cursor-pointer ml-5 text-lg hover:text-black    text-slate-600'
           >
             Blog
           </a>
           <p
             onClick={goToContact}
-            className=' cursor-pointer ml-5 text-xl hover:text-black    text-slate-600'
+            className=' cursor-pointer ml-5 text-lg hover:text-black    text-slate-600'
           >
             Contact
           </p>

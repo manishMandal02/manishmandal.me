@@ -8,9 +8,9 @@ import Blogs from './Blogs';
 const Blog = () => {
   return (
     <div>
-      <Divider />
+      <Divider quoteNum={0} />
       <div className='ml-18 ms:ml-3 mt-16 mb-10'>
-        <SectionHeader header='Blog'  />
+        <SectionHeader header='Blog' />
         <SectionSubHeader title='My Latest Blog Posts.' />
         {/* Blogs */}
         <div className='w-full px-32 mt-12 flex items-center justify-center'>
