@@ -14,7 +14,7 @@ const MyProjects = () => {
     <div className='overflow-hidden w-full mb-6'>
       <Divider />
       <div className='mt-24 ms:mt-14 flex flex-col '>
-        <div className='ml-18 ms:ml-3'>
+        <div className='ml-18 ms:ml-3' id='projects'>
           <SectionHeader header='Projects' />
           <SectionSubHeader title="Some Things I've Built." />
         </div>
@@ -24,7 +24,14 @@ const MyProjects = () => {
           ))}
           <div className='mt-16 ms:mt-10 w-full flex flex-col items-center justify-center'>
             <div className='relative'>
-              <p className='text-xl font-medium text-slate-600 mb-4 ms:mb-2'>Other Projects 👇</p>
+              <p
+                className='text-xl font-medium text-slate-600 mb-4 ms:mb-2'
+                data-aos='zoom-in-up'
+                data-aos-duration='500'
+                data-aos-mirror='true'
+              >
+                Other Projects 👇
+              </p>
             </div>
             {/*  */}
             <Projects />

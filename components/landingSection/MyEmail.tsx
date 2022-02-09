@@ -4,11 +4,10 @@ import { FaCopy, FaEnvelope } from 'react-icons/fa';
 import { emailContainerVariant, introTitleVariant } from '../../src/animations/landingSection';
 
 interface Props {
-  variants?: Variants;
-  whileInView?: boolean;
+  customAnimation?: boolean;
 }
 
-const MyEmail: React.FC<Props> = ({ variants, whileInView }) => {
+const MyEmail: React.FC<Props> = ({ customAnimation }) => {
   const [isCopied, setIsCopied] = useState<boolean>(false);
 
   // copy email
@@ -27,10 +26,9 @@ const MyEmail: React.FC<Props> = ({ variants, whileInView }) => {
       <motion.div
         className='w-98 mb-2 ms:w-82 relative group flex justify-between items-center mt-16 ms:mt-12 border-2 border-primary cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
         onClick={copyEmailHandler}
-        variants={variants ? undefined : emailContainerVariant}
+        variants={customAnimation ? undefined : emailContainerVariant}
         initial='initial'
-        animate={!whileInView ? 'animate' : ''}
-        whileInView={whileInView ? 'animate' : ''}
+        animate='animate'
       >
         <div className='ms:hidden w-0  group-hover:w-full flex transition-all duration-300 m-0 p-0 absolute  h-full  items-center tracking-wide justify-center border-5 rounded-sm border-primary  bg-primary z-10 opacity-90'>
           <p className='hidden  group-hover:block m-0 font-medium text-gray-50 text-base delay-200'>
@@ -55,7 +53,7 @@ const MyEmail: React.FC<Props> = ({ variants, whileInView }) => {
           )}
         </div>
         <div className='flex w-full items-center justify-center '>
-          <p className='group-hover:text-lg ms:group-hover:text-  transition-all duration-500   m-0 flex text-xl ms:text-lg font-medium tracking-wide text-center justify-center text-slate-700 py-2 px-4 ms:px-2 '>
+          <p className='group-hover:text-lg ms:group-hover:text-  transition-all duration-400   m-0 flex text-xl ms:text-lg font-medium tracking-wide text-center justify-center text-slate-700 py-2 px-4 ms:px-2 '>
             manishmandalj@gmail.com
           </p>
         </div>

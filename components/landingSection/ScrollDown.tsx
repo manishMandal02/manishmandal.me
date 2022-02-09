@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { BsArrowsExpand } from 'react-icons/bs';
 import { scrollDownContainerVariant, scrollDownVariant } from '../../src/animations/landingSection';
+import scrollTo from '../../src/utils/scrollTo';
 
 const ScrollDown = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -31,6 +32,7 @@ const ScrollDown = () => {
           >
             <motion.div
               variants={scrollDownVariant}
+              onClick={() => scrollTo('about-me')}
               whileHover='onHover'
               className=' py-4 px-4 rounded-full shadow-md text-lg mr-4 scale-125 ms:text-base ms:py-3 ms:px-3 shadow-gray-300 cursor-pointer '
             >

@@ -12,13 +12,6 @@ const About = () => {
     </span>
   );
 
-  const animations = [
-    "data-aos='fade-up'",
-    "data-aos-duration='500'",
-    "data-aos-delay='150'",
-    "data-aos-mirror='true'",
-  ];
-
   return (
     <div className='ml-20 ms:w-full ms:-ml-1 ms:mt-14'>
       <SectionHeader header='About me' />
@@ -26,7 +19,7 @@ const About = () => {
         className=' m-0 text-xl ms:text-lg font-medium text-slate-700 tracking-normal mt-8 ms:mt-3'
         data-aos='fade-up'
         data-aos-duration='500'
-        data-aos-delay='150'
+        data-aos-delay='100'
         data-aos-mirror='true'
       >
         🤵 Manish Mandal &nbsp; {space} 📌 Bangalore, India
@@ -35,7 +28,6 @@ const About = () => {
         className='text-xl ms:text-base font-semibold text-slate-700  tracking-wide mt-5 ms:mt-3 '
         data-aos='fade-up'
         data-aos-duration='500'
-        data-aos-delay='150'
         data-aos-mirror='true'
       >
         <span className='text-xl'>👉 </span>I help people turn ideas into functional and interactive{' '}
@@ -47,14 +39,13 @@ const About = () => {
         className='w-1 h-44 ms:h-56 bottom-0 ms:-bottom-0  absolute bg-gradient-to-b from-cyan-500 to-blue-400 '
         data-aos='fade-up'
         data-aos-duration='600'
-        data-aos-delay='400'
+        data-aos-delay='300'
         data-aos-mirror='true'
       ></div>
       <h3
         className=' text-base leading-6 font-medium  text-gray-700  pt-2 pb-3 px-2 mt-5 ml-2'
         data-aos='fade-up'
         data-aos-duration='500'
-        data-aos-delay='150'
         data-aos-mirror='true'
       >
         Self-thought web developer Experienced in using{' '}

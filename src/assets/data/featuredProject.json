@@ -1,6 +1,6 @@
 [
   {
-    "image": "/growmart-banner.jpg",
+    "image": "/growmart-banner.webp",
     "title": "GrowMart",
     "subTitle": "FullStack e-commerce webapp with react",
     "github": "https://github.com/manishMandal02/growmart-frontend",
@@ -18,7 +18,7 @@
     "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
   },
   {
-    "image": "/growmart-banner.jpg",
+    "image": "/growmart-banner.webp",
     "title": "GrowMart",
     "subTitle": "FullStack e-commerce webapp with react",
     "github": "https://github.com/manishMandal02/growmart-frontend",

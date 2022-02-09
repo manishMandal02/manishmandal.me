@@ -1,6 +1,5 @@
 [
   {
-    "image": "/growmart-banner.jpg",
     "title": "GrowMart",
     "subTitle": "Ecommerce webapp with react",
     "github": "https://github.com/manishMandal02/growmart-frontend",
@@ -19,65 +18,6 @@
     "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
   },
   {
-    "image": "/growmart-banner.jpg",
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
-  },
-  {
-    "image": "/growmart-banner.jpg",
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
-  },
-  {
-    "image": "/growmart-banner.jpg",
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
-  },
-  {
-    "image": "/growmart-banner.jpg",
     "title": "GrowMart",
     "subTitle": "Ecommerce webapp with react",
     "github": "https://github.com/manishMandal02/growmart-frontend",
@@ -97,7 +37,61 @@
     "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
   },
   {
-    "image": "/growmart-banner.jpg",
+    "title": "GrowMart",
+    "subTitle": "Ecommerce webapp with react",
+    "github": "https://github.com/manishMandal02/growmart-frontend",
+    "link": "https://growmart.netlify.app/",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
+    "tags": [
+      "ReactJs",
+      "E-commerce",
+      "scss",
+      "Fullstack",
+      "RestAPI",
+      "Authentication",
+      "MobileFirst",
+      "PaymentGateway"
+    ],
+    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+  },
+  {
+    "title": "GrowMart",
+    "subTitle": "Ecommerce webapp with react",
+    "github": "https://github.com/manishMandal02/growmart-frontend",
+    "link": "https://growmart.netlify.app/",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
+    "tags": [
+      "ReactJs",
+      "E-commerce",
+      "scss",
+      "Fullstack",
+      "RestAPI",
+      "Authentication",
+      "MobileFirst",
+      "PaymentGateway"
+    ],
+    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+  },
+  {
+    "title": "GrowMart",
+    "subTitle": "Ecommerce webapp with react",
+    "github": "https://github.com/manishMandal02/growmart-frontend",
+    "link": "https://growmart.netlify.app/",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
+
+    "tags": [
+      "ReactJs",
+      "E-commerce",
+      "scss",
+      "Fullstack",
+      "RestAPI",
+      "Authentication",
+      "MobileFirst",
+      "PaymentGateway"
+    ],
+    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+  },
+  {
     "title": "GrowMart",
     "subTitle": "Ecommerce webapp with react",
     "github": "https://github.com/manishMandal02/growmart-frontend",

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import React from 'react';
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
@@ -42,9 +43,15 @@ const FeaturedProductCard: React.FC<Props> = ({
         href={link}
         target='_blank'
         rel='noreferrer'
-        className='w-3/6  ms:w-full bg-emerald-300 rounded-lg  group'
+        className='w-3/6 max-w-3/6  ms:w-full bg-emerald-300 rounded-lg  group'
       >
-        <img src={image} alt={title} className='w-full group-hover:opacity-90 transition-all duration-200' />
+        <Image
+          src={image}
+          alt={title}
+          width={520}
+          height={295}
+          className='w-full group-hover:opacity-90 transition-all duration-200'
+        />
       </a>
       <div
         className={`w-1/2 ms:w-full flex  ${

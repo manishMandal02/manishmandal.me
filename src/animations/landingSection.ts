@@ -11,35 +11,45 @@ const planeVariants = {
     // x: [-1500, -1000, -500, -100, 1],
     // y: [-500, -100, 0, 50, 100, 2],
     rotateX: 10,
-    // rotateZ: -4,
+    rotateZ: 0,
+    rotateY: -5,
     transition: {
       delay: 0.2,
       duration: 1,
       type: 'spring',
       ease: 'linear',
-      stiffness: 24,
+      stiffness: 20,
       rotateZ: {
         duration: 2,
       },
       rotateX: {
         duration: 2,
       },
+      rotateY: {
+        duration: 2,
+      },
     },
   },
   whileInView: {
-    y: [2, -5, 2],
-    x: [1, -5, 1],
-    rotateX: [10, -22, 10],
-    rotateZ: [-1, 0, -1],
-    // rotateY: [-10, 20, -10],
+    y: [2, -15, 2],
+    x: [1, -10, 1],
+    rotateX: [10, -20, 10],
+    skew: [0, -3, 0],
+    rotateZ: [0, 0],
+    rotateY: [-5, -5],
     transition: {
       stiffness: 140,
       repeat: Infinity,
       duration: 3,
-      type: 'spring',
+      type: 'ease',
     },
   },
 };
+
+/*
+    rotateZ: -4,
+
+*/
 
 const introNameVariant = {
   initial: {
@@ -50,10 +60,10 @@ const introNameVariant = {
     x: 0,
     // opacity: 1,
     transition: {
-      //   duration: 0.1,
+      duration: 0.1,
       type: 'spring',
       stiffness: 120,
-      delay: 1.6,
+      delay: 1.2,
     },
   },
 };
@@ -64,10 +74,9 @@ const introNameLineVariant = {
   animate: {
     x: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.6,
       type: 'spring',
-      stiffness: 120,
-      delay: 2.3,
+      delay: 2,
     },
   },
 };
@@ -80,8 +89,8 @@ const introTitleVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      // delay: 0.2,
-      duration: 0.5,
+      delay: 0.8,
+      duration: 1,
       type: 'spring',
       stiffness: 120,
     },
@@ -128,7 +137,7 @@ const scrollDownContainerVariant = {
     transition: {
       duration: 0.8,
       type: 'easeIn',
-      delay: 6,
+      delay: 5.5,
     },
   },
   exit: {
