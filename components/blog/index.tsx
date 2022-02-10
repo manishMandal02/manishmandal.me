@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import Divider from '../UI/Divider';
 import SectionHeader from '../UI/SectionHeader';
 import SectionSubHeader from '../UI/SectionSubHeader';
 import Blogs from './Blogs';
@@ -8,7 +7,6 @@ import Blogs from './Blogs';
 const Blog = () => {
   return (
     <div>
-<!--       <Divider quoteNum={1} /> -->
       <div className='ml-18 ms:ml-3 mt-16 mb-10'>
         <SectionHeader header='Blog' />
         <SectionSubHeader title='My Latest Blog Posts.' />
