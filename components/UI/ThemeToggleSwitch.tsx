@@ -39,7 +39,7 @@ const ThemeToggleSwitch = () => {
         style={{
           backgroundImage: `url("https://res.cloudinary.com/vastia/image/upload/v1644491008/portfolio/${
             isDark ? 'dark' : 'light'
-          }-mode.png")`,
+          }-mode.webp")`,
         }}
       ></div>
       <div
