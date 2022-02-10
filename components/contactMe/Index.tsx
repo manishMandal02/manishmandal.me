@@ -7,7 +7,6 @@ import SocialLinks from '../UI/SocialLinks';
 const ContactMe = () => {
   return (
     <>
-      <Divider quoteNum={3} marginTop={20} marginBottom={16} />
       <Divider quoteNum={3} marginTop={20} marginBottom={16} marginTopMobile={10} marginBottomMobile={12} />
       <div className='mt-20  ms:mt-14 ms:-ml-1 -ml-2  w-full  mx-6 flex flex-col items-center justify-center overflow-hidden '>
         <SectionHeader header='Say hello 👋' />
