@@ -52,7 +52,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
       {/* Below 850px */}
-      <div className='hidden ms:flex w-full items-center justify-center absolute top-6'>
+      <div className='hidden ms:flex w-full items-center justify-center absolute top-16'>
         <motion.div className='w-2/4' variants={planeVariants} initial='initial' animate={planeControls}>
           <Image src={planeSvg} className='' />
         </motion.div>

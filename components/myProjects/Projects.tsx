@@ -12,7 +12,7 @@ const Projects = () => {
   const Arrow = isViewMore ? FaChevronUp : FaChevronDown;
   return (
     <>
-      <div className='flex flex-wrap  items-center justify-start w-2/3 ms:w-4/5'>
+      <div className='flex flex-wrap  items-center justify-center w-2/3 ms:w-4/5'>
         {allProjectsData.map((data, i) => {
           if (!isViewMore ? i <= 2 : i <= 5) {
             return <ProductCard id={nanoid()} {...data} />;
@@ -23,7 +23,7 @@ const Projects = () => {
         onClick={() => {
           setIsViewMore((prev) => !prev);
         }}
-        className='group mt-8 flex items-center text-lg text-slate-900 font-medium'
+        className='group mt-8 flex items-center text-lg text-slate-900 dark:text-gray-400 font-medium'
       >
         {isViewMore ? 'View Less' : 'View More'}
         <Arrow
@@ -37,9 +37,10 @@ const Projects = () => {
           href='https://github.com/manishMandal02'
           target='_blank'
           rel='noreferrer'
-          className='flex items-center justify-center mt-2 hover:underline transition-all duration-400 '
+          className='flex items-center justify-center mt-2 hover:underline transition-all duration-400 dark:text-gray-400 '
         >
-          View all my projects on Github <FaExternalLinkAlt className='text-sm ml-1 text-slate-600 ' />
+          View all my projects on Github{' '}
+          <FaExternalLinkAlt className='text-sm ml-1 text-slate-600 dark:text-gray-400' />
         </a>
       )}
     </>

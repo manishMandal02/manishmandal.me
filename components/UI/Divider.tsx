@@ -23,7 +23,7 @@ const Divider: React.FC<Props> = ({
     >
       <img
         src='/triangle.svg'
-        className='w-52 absolute opacity-60'
+        className='w-52 absolute opacity-50'
         data-aos='fade-down'
         data-aos-duration='400'
         data-aos-mirror='true'

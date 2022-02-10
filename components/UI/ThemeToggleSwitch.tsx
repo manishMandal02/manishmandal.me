@@ -29,7 +29,7 @@ const ThemeToggleSwitch = () => {
 
   return (
     <div
-      className='relative top-10 right-10 w-20 ms:w-16 h-10 ms:h-8 cursor-pointer'
+      className='relative top-0 -right-16 w-16 ms:w-14 h-8 ms:h-7 cursor-pointer'
       onClick={() => setIsDark((prev) => !prev)}
     >
       <div
@@ -45,7 +45,7 @@ const ThemeToggleSwitch = () => {
       <div
         className={`absolute top-0   ${
           isDark ? 'translate-x-full' : 'translate-x-0'
-        }   w-10 ms:w-8 h-10 ms:h-8 ${
+        }   w-8 ms:w-7 h-8 ms:h-7 ${
           isDark ? 'bg-gray-200' : 'bg-yellow-300'
         } rounded-full  z-10 transition-all duration-500`}
       ></div>

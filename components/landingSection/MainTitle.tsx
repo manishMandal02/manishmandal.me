@@ -14,7 +14,7 @@ const MainTitle: React.FC<Props> = ({ controls }) => {
   return (
     <>
       <motion.p
-        className='m-0 flex items-center font-semibold text-primary text-xl dark:text-indigo-500 tracking-wide'
+        className='m-0 flex items-center font-semibold text-primary text-xl dark:text-primary-dark tracking-wide'
         variants={introNameVariant}
         initial='initial'
         // animate='animate'

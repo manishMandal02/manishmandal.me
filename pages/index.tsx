@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className=' flex flex-col min-h-screen dark:bg-primaryDark overflow-x-hidden transition-all duration-400 '>
+    <div className=' flex flex-col min-h-screen dark:bg-primaryDarkBG overflow-x-hidden transition-all duration-400 '>
       <Head>
         <title>Manish Mandal</title>
         <link rel='icon' href='/favicon.ico' />

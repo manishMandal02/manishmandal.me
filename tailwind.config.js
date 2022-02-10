@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#3e2ddf',
+          DEFAULT: '#2563eb',
+          dark: '#3b82f6',
         },
-        primaryDark: {
+        primaryDarkBG: {
           DEFAULT: '#0e1627',
         },
       },
@@ -34,17 +35,13 @@ module.exports = {
 };
 
 /*
-try as primary - text-indigo-500
-
-dark:bg-primaryDark
+dark:bg-primaryDarkBG
 
 dark:text-gray-300
 
-dark:text-indigo-500
+dark:text-primary-dark
 
 dark:bg-slate-400 
-
-dark:
 
 dark:hover:text-slate-100 
 

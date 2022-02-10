@@ -31,7 +31,7 @@ const ContactMe = () => {
               href='https://twitter.com/onemandal'
               target='_blank'
               rel='noreferrer'
-              className='text-sky-500 dark:text-sky-400'
+              className='text-sky-500 appearance-none dark:text-sky-400'
             >
               Twitter
             </a>
@@ -40,7 +40,7 @@ const ContactMe = () => {
               href='https://www.linkedin.com/in/manish-mandal/'
               target='_blank'
               rel='noreferrer'
-              className='text-blue-600 dark:text-blue-500'
+              className='text-blue-600 appearance-none dark:text-blue-400'
             >
               &nbsp; LinkedIn
             </a>
@@ -49,7 +49,7 @@ const ContactMe = () => {
           <div className='mt-1 w-24'>
             <SocialLinks />
           </div>
-          <p className='mt-14 mb-1  text-gray-600 dark:text-gray-500 opacity-80 tracking-wider text-base'>
+          <p className='mt-14 mb-1  text-gray-600 dark:text-gray-500 opacity-75 tracking-wider text-sm'>
             Designed & Built by Manish Mandal
             {/* <span className='text-sm'> {new Date().getFullYear()}</span> */}
           </p>

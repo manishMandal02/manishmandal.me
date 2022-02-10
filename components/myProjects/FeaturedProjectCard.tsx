@@ -43,7 +43,7 @@ const FeaturedProductCard: React.FC<Props> = ({
         href={link}
         target='_blank'
         rel='noreferrer'
-        className='w-3/6 max-w-3/6  ms:w-full bg-emerald-300 dark:bg-primaryDark rounded-lg  group'
+        className='w-3/6 max-w-3/6  ms:w-full bg-emerald-300 dark:bg-primaryDarkBG rounded-lg  group'
       >
         <Image
           src={image}
