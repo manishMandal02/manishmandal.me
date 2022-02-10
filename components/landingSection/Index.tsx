@@ -8,6 +8,8 @@ import MyEmail from './MyEmail';
 import ScrollDown from './ScrollDown';
 import Subtitle from './Subtitle';
 
+import planeSvg from '../../public/plane.svg';
+
 const HeroSection = () => {
   // animation ref
   const planeControls = useAnimation();
@@ -46,13 +48,13 @@ const HeroSection = () => {
       {/*  Above 850px */}
       <div className='ms:hidden flex w-1/2 items-center justify-center'>
         <motion.div variants={planeVariants} initial='initial' animate={planeControls}>
-          <Image src='/plane.svg' className='w-full' width={500} height={300} />
+          <Image src={planeSvg} className='w-full' />
         </motion.div>
       </div>
       {/* Below 850px */}
       <div className='hidden ms:flex w-full items-center justify-center absolute top-6'>
-        <motion.div variants={planeVariants} initial='initial' animate={planeControls}>
-          <Image src='/plane.svg' className='w-full' width={180} height={180} />
+        <motion.div className='w-2/4' variants={planeVariants} initial='initial' animate={planeControls}>
+          <Image src={planeSvg} className='' />
         </motion.div>
       </div>
     </div>

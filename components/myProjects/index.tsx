@@ -12,7 +12,7 @@ import Projects from './Projects';
 const MyProjects = () => {
   return (
     <div className='overflow-hidden w-full mb-6'>
-      <Divider quoteNum={2} marginTop={20} marginBottom={16} />
+      <Divider quoteNum={2} marginTop={20} marginBottom={20} marginTopMobile={20} marginBottomMobile={28} />
       <div className='mt-24 ms:mt-14 flex flex-col '>
         <div className='ml-18 ms:ml-3' id='projects'>
           <SectionHeader header='Projects' />
@@ -25,7 +25,7 @@ const MyProjects = () => {
           <div className='mt-16 ms:mt-10 w-full flex flex-col items-center justify-center'>
             <div className='relative'>
               <p
-                className='text-xl font-medium text-slate-600 mb-4 ms:mb-2'
+                className='text-xl font-medium text-slate-600 dark:text-gray-300 mb-4 ms:mb-2'
                 data-aos='zoom-in-up'
                 data-aos-duration='500'
                 data-aos-mirror='true'

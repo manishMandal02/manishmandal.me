@@ -4,16 +4,22 @@ import quotes from '../../src/assets/data/quotes.json';
 interface Props {
   quoteNum: number;
   marginTop: number;
-  marginTopMobile?: number;
+  marginTopMobile: number;
   marginBottom: number;
-  marginBottomMobile?: number;
+  marginBottomMobile: number;
 }
 
-const Divider: React.FC<Props> = ({ quoteNum, marginTop, marginBottom }) => {
+const Divider: React.FC<Props> = ({
+  quoteNum,
+  marginTop,
+  marginBottom,
+  marginBottomMobile,
+  marginTopMobile,
+}) => {
   const quote = quotes[quoteNum - 1];
   return (
     <div
-      className={`mt-${marginTop} mb-${marginBottom} h-44  ms:mt-0 ms:h-16 flex flex-col items-center justify-center`}
+      className={`mt-${marginTop} ms:mt-${marginTopMobile} mb-${marginBottom} ms:mb-${marginBottomMobile} h-44  ms:h-28 flex flex-col items-center justify-center`}
     >
       <img
         src='/triangle.svg'
@@ -29,18 +35,19 @@ const Divider: React.FC<Props> = ({ quoteNum, marginTop, marginBottom }) => {
         data-aos-delay='200'
         data-aos-mirror='true'
       >
-        {/* <span className='text-6xl text-slate-500 font-mono -mr-4 -mt-6'>〞</span> */}
-
-        <p className='text-2xl tracking-wide text-center text-slate-800 font-medium leading-tight'>
-          {/* If I always did what I was qualified to do, <br /> I'd be pushing a broom somewhere */}
-          {quote?.quoteLine1} <br /> {quote?.quoteLine2}
+        <p className='text-2xl ms:text-xl tracking-wide text-center text-slate-800 dark:text-gray-300 dark:opacity-90 font-medium leading-tight ms:leading-6'>
+          {quote?.quoteLine1}{' '}
+          <span className='ms:hidden'>
+            <br />
+          </span>
+          {quote?.quoteLine2}
         </p>
-        <p className='text-base text-slate-700  font-medium '>
-          <span className=' font-bold  font-mono text-slate-800  tracking-tighter mr-1'>—</span>
-          {/* Naval */}
+        <p className='text-base text-slate-700 dark:text-gray-300  font-medium '>
+          <span className=' font-bold  font-mono text-slate-800 dark:text-gray-400  tracking-tighter mr-1'>
+            —
+          </span>
           {quote?.author}
         </p>
-        {/* <span className='text-6xl text-slate-500 font-mono -ml-1 -mb-9'>〟</span> */}
       </div>
     </div>
   );

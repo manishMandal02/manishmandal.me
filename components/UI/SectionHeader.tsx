@@ -11,7 +11,7 @@ const SectionHeader: React.FC<Props> = ({ header }) => {
   return (
     <>
       <div
-        className='m-0 mt-0  flex items-center font-semibold text-primary text-xl tracking-wide relative'
+        className='m-0 mt-0  flex items-center font-semibold text-primary dark:text-indigo-400 text-xl tracking-wide relative'
         data-aos='slide-right'
         data-aos-duration='600'
         data-aos-mirror='true'

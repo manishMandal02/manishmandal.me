@@ -1,10 +1,14 @@
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         primary: {
           DEFAULT: '#3e2ddf',
+        },
+        primaryDark: {
+          DEFAULT: '#0e1627',
         },
       },
       borderWidth: {
@@ -28,3 +32,20 @@ module.exports = {
   },
   plugins: [],
 };
+
+/*
+try as primary - text-indigo-500
+
+dark:bg-primaryDark
+
+dark:text-gray-300
+
+dark:text-indigo-500
+
+dark:bg-slate-400 
+
+dark:
+
+dark:hover:text-slate-100 
+
+*/

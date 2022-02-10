@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import scrollTo from '../../src/utils/scrollTo';
 import SocialLinks from './SocialLinks';
+import ThemeToggleSwitch from './ThemeToggleSwitch';
 
 // import logo from '/m-logo.svg';
 
@@ -22,31 +23,37 @@ const Navbar = () => {
   const blogLink = 'https://blog.manishmandal.me';
 
   return (
-    <nav className='h-20 ms:h-28 overflow-hidden ms:px-0 ms:pt-0   px-28 py-8 pt-10 absolute top-0 w-full z-10 bg-white'>
+    <nav className='h-20 ms:h-28 overflow-hidden ms:px-0 ms:pt-0   px-28 py-8 pt-10 absolute top-0 w-full z-10 bg-white dark:bg-primaryDark transition-all duration-400'>
+      <div className='fixed ms:top-16 -top-6 -right-6 ms:-right-8 '>
+        <ThemeToggleSwitch />
+      </div>
       <div className='ms:hidden h-full flex items-center justify-around'>
         <Link href={'/'}>
           <Image src={'/m-logo.svg'} className='cursor-pointer' width={60} height={60} alt='manish-mandal' />
         </Link>
-        <div className='flex items-center justify-center overflow-hidden'>
-          <p onClick={goToAboutMe} className='text-lg  text-slate-600 hover:text-black cursor-pointer'>
+        <div className='flex items-center justify-center overflow-hidden text-slate-600  dark:text-gray-300'>
+          <p
+            onClick={goToAboutMe}
+            className='text-lg  hover:text-black dark:hover:text-slate-100  cursor-pointer'
+          >
             AboutMe
           </p>
           <p
             onClick={goToProjects}
-            className=' cursor-pointer ml-5 text-lg hover:text-black    text-slate-600'
+            className=' cursor-pointer ml-5 text-lg hover:text-black  dark:hover:text-slate-100 '
           >
             Projects
           </p>
           <a
             href={blogLink}
             target='_blank'
-            className=' cursor-pointer ml-5 text-lg hover:text-black    text-slate-600'
+            className=' cursor-pointer ml-5 text-lg hover:text-black  dark:hover:text-slate-100'
           >
             Blog
           </a>
           <p
             onClick={goToContact}
-            className=' cursor-pointer ml-5 text-lg hover:text-black    text-slate-600'
+            className=' cursor-pointer ml-5 text-lg hover:text-black dark:hover:text-slate-100  '
           >
             Contact
           </p>
@@ -70,20 +77,17 @@ const Navbar = () => {
             <SocialLinks github />
           </div>
         </div>
-        <div className='w-full flex items-center justify-center overflow-hidden  -mb-2 mt-2'>
-          <p onClick={goToAboutMe} className='text-lg  text-slate-600 cursor-pointer'>
+        <div className='w-full flex items-center justify-center overflow-hidden text-slate-600 dark:text-white   -mb-2 mt-2'>
+          <p onClick={goToAboutMe} className='text-lg   cursor-pointer'>
             AboutMe
           </p>
-          <p onClick={goToProjects} className=' cursor-pointer ml-4 text-lg text-slate-600'>
+          <p onClick={goToProjects} className=' cursor-pointer ml-4 text-lg '>
             Projects
           </p>
-          <a href={blogLink} target='_blank' className=' cursor-pointer ml-4 text-lg text-slate-600'>
+          <a href={blogLink} target='_blank' className=' cursor-pointer ml-4 text-lg '>
             Blog
           </a>
-          <p
-            onClick={goToContact}
-            className=' cursor-pointer ml-4 text-lg hover:text-black    text-slate-600'
-          >
+          <p onClick={goToContact} className=' cursor-pointer ml-4 text-lg hover:text-black    '>
             Contact
           </p>
         </div>

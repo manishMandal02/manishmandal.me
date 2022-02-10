@@ -13,13 +13,15 @@ import MyProjects from '../components/myProjects/index';
 import ContactMe from '../components/contactMe/Index';
 import AboutMe from '../components/aboutMe/Index';
 import Blog from '../components/blog';
+import { useState } from 'react';
 
 export default function Home() {
   if (process.browser) {
     AOS.init();
   }
+
   return (
-    <div className=' flex flex-col min-h-screen overflow-x-hidden transition-all duration-150'>
+    <div className=' flex flex-col min-h-screen dark:bg-primaryDark overflow-x-hidden transition-all duration-400 '>
       <Head>
         <title>Manish Mandal</title>
         <link rel='icon' href='/favicon.ico' />

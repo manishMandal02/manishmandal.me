@@ -18,6 +18,11 @@ body {
 .shadowPlane2 {
   box-shadow: #b8bec4 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
 }
+
+.shadow1 {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
 .primaryColor {
   color: #3e2ddf;
 }
@@ -25,7 +30,7 @@ body {
 .linedBorder {
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23333' stroke-width='2.5' stroke-dasharray='6' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
   border-radius: 50%;
-  opacity: 0.08;
+  /* opacity: 0.08; */
 }
 
 .triangle {
@@ -35,4 +40,9 @@ body {
   border-right: 8rem solid transparent;
   border-top: 9.5rem solid #49e2db;
   border-radius: 8rem;
+}
+
+.test {
+  color: #0e1627;
+  color: #dbe1ea;
 }

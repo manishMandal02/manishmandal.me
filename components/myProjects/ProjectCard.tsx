@@ -23,23 +23,25 @@ const ProductCard: React.FC<Props> = ({ id, title, subTitle, tech, github, link,
       // data-aos-delay='150'
       data-aos-mirror='true'
     >
-      <p className='m-0 text-xl text-slate-700 font-semibold text-center mt-1 tracking-wide'>{title}</p>
-      <p className='text-base  text-slate-700 font-medium mt-1'>{subTitle}</p>
-      <p className='text-sm  text-slate-600 font-medium leading mt-3 mb-2'>{desc}</p>
-      <div className='w-full flex flex-wrap -ml-2 mt-4 -mb-2'>
+      <p className='m-0 text-xl text-slate-700 dark:text-gray-300 font-semibold text-center mt-1 tracking-wide'>
+        {title}
+      </p>
+      <p className='text-base  text-slate-700 dark:text-gray-400 font-medium mt-1'>{subTitle}</p>
+      <p className='text-sm  text-slate-600 dark:text-gray-400 font- leading mt-3 mb-2'>{desc}</p>
+      <div className='w-full flex flex-wrap -ml-2 mt-4 dark:text-gray-300 -mb-2'>
         {tech.map((tech, i) => (
           <span key={tech + i} className='m-0 -mt-px leading-snug font-medium ml-2 opacity-80 text-sm'>
             {tech}
           </span>
         ))}
       </div>
-      <div className='flex justify-end items-center mt-1 text-slate-600 overflow-hidden'>
+      <div className='flex justify-end items-center mt-1 text-slate-600 dark:text-gray-400 overflow-hidden'>
         {github && (
           <a
             href={github && github}
             target='_blank'
             rel='noreferrer'
-            className='text-xl cursor-pointer mr-3 ms:mr-4 hover:text-slate-900'
+            className='text-xl cursor-pointer mr-3 ms:mr-4 hover:text-slate-900 dark:hover:text-gray-400'
           >
             <FaGithub className='' />
           </a>
@@ -48,7 +50,7 @@ const ProductCard: React.FC<Props> = ({ id, title, subTitle, tech, github, link,
           href={link}
           target='_blank'
           rel='noreferrer'
-          className='cursor-pointer mr-1 text-lg hover:text-slate-900'
+          className='cursor-pointer mr-1 text-lg hover:text-slate-900 dark:hover:text-gray-400'
         >
           <FaExternalLinkAlt className='' />
         </a>

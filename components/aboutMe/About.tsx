@@ -16,7 +16,7 @@ const About = () => {
     <div className='ml-20 ms:w-full ms:-ml-1 ms:mt-14'>
       <SectionHeader header='About me' />
       <p
-        className=' m-0 text-xl ms:text-lg font-medium text-slate-700 tracking-normal mt-8 ms:mt-3'
+        className=' m-0 text-xl ms:text-lg font-medium text-slate-700 dark:text-gray-300 tracking-normal mt-8 ms:mt-3'
         data-aos='fade-up'
         data-aos-duration='500'
         data-aos-delay='100'
@@ -25,7 +25,7 @@ const About = () => {
         🤵 Manish Mandal &nbsp; {space} 📌 Bangalore, India
       </p>
       <h2
-        className='text-xl ms:text-base font-semibold text-slate-700  tracking-wide mt-5 ms:mt-3 '
+        className='text-xl ms:text-base font-semibold text-slate-700  dark:text-gray-300 tracking-wide mt-5 ms:mt-3 '
         data-aos='fade-up'
         data-aos-duration='500'
         data-aos-mirror='true'
@@ -43,16 +43,18 @@ const About = () => {
         data-aos-mirror='true'
       ></div>
       <h3
-        className=' text-base leading-6 font-medium  text-gray-700  pt-2 pb-3 px-2 mt-5 ml-2'
+        className=' text-base leading-6 font-medium  text-gray-700 dark:text-gray-300  pt-2 pb-3 px-2 mt-5 ml-2'
         data-aos='fade-up'
         data-aos-duration='500'
         data-aos-mirror='true'
       >
         Self-thought web developer Experienced in using{' '}
-        <span className='bg-yellow-300 px-1 rounded-sm'> JavaScript </span> {space}
+        <span className='bg-yellow-300 px-1 dark:text-gray-900 rounded-sm'> JavaScript </span> {space}
         {newLine}
-        and its ecosystem, namely <span className='bg-cyan-300 px-1 rounded-sm'> React</span> &{' '}
-        <span className='bg-green-300 px-1 rounded-sm'> NodeJs</span> to develop <br /> applications. <br />
+        and its ecosystem, namely{' '}
+        <span className='bg-cyan-300 px-1 dark:text-gray-900 rounded-sm'> React</span> &{' '}
+        <span className='bg-green-300 px-1 dark:text-gray-900 rounded-sm'> NodeJs</span> to develop <br />{' '}
+        applications. <br />
         <p className='mt-1'>
           I have spent a significant amount of time developing and {space}
           {newLine}
