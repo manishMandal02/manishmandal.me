@@ -12,7 +12,7 @@ const Projects = () => {
   const Arrow = isViewMore ? FaChevronUp : FaChevronDown;
   return (
     <>
-      <div className='flex flex-wrap  items-center justify-start -ml-4 w-2/3 ms:w-4/5'>
+      <div className='flex flex-wrap  items-center justify-center -ml-4 w-2/3 ms:w-4/5'>
         {allProjectsData.map((data, i) => {
           if (!isViewMore ? i <= 2 : i <= 5) {
             return <ProductCard id={nanoid()} {...data} />;

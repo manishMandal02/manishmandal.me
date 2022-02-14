@@ -28,7 +28,7 @@ export default function Home() {
         <meta name='theme-color' content='#3b82f6' />
         <meta
           name='keywords'
-          content='A FullStack web developer, Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop applications.'
+          content='A FullStack web developer, Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop web applications.'
         />
         <meta
           name='keywords'
@@ -39,13 +39,13 @@ export default function Home() {
         title='Manish Mandal'
         titleTemplate='Manish Mandal'
         defaultTitle='Manish Mandal'
-        description='A FullStack web developer, Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop applications.'
-        canonical='https://manishmandal.me/'
+        description='A FullStack web developer, Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop web applications.'
+        canonical='https://manishmandal.me'
         openGraph={{
-          url: 'https://manishmandal.me/',
+          url: 'https://manishmandal.me',
           title: 'Manish Mandal',
           description:
-            'A FullStack Web Developer,  Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop applications.',
+            'A FullStack Web Developer,  Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop web applications.',
           images: [
             {
               url: 'https://manishmandal.me/manish-mandal-web.png',

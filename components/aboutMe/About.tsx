@@ -53,7 +53,7 @@ const About = () => {
         {newLine}
         and its ecosystem, namely{' '}
         <span className='bg-cyan-300 px-1 dark:text-gray-900 rounded-sm'> React</span> &{' '}
-        <span className='bg-green-300 px-1 dark:text-gray-900 rounded-sm'> NodeJs</span> to develop <br />{' '}
+        <span className='bg-green-300 px-1 dark:text-gray-900 rounded-sm'> NodeJs</span> to develop <br /> web
         applications. <br />
         <p className='mt-1'>
           I have spent a significant amount of time developing and {space}
