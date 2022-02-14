@@ -1,112 +1,29 @@
 [
   {
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+    "title": "Kodai Interiors",
+    "desc": "Landing page for Interior design firm *Fully responsive design,  *Server side rendering for better SEO.",
+    "github": "https://github.com/manishMandal02/kodai-interiors-static",
+    "link": "http://kodaiinteriors.com",
+    "tech": ["NextJs", "TailwindCSS", "Responsive", "SEO"]
   },
   {
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+    "title": "TODO with Voice Assistant",
+    "desc": "TODO list with 🎙️ Voice control, speech recognition using Web Speech API",
+    "github": "https://github.com/manishMandal02/to-do-with-voice-assistant",
+    "link": "https://todo-voice.netlify.app/",
+    "tech": ["ReactJs", "SCSS", "NodeJs", "Voice Control"]
   },
   {
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+    "title": "Smart Dustbin (IoT)",
+    "desc": "Built this project as part of a competition, *Powered by Arduino and NodeJs, *Realtime live data",
+    "github": "https://github.com/manishMandal02/-smart-dustbin-proj-frontend",
+    "tech": ["NextJs", "NodeJs", "Webhooks", "IoT"]
   },
   {
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
-  },
-  {
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
-  },
-  {
-    "title": "GrowMart",
-    "subTitle": "Ecommerce webapp with react",
-    "github": "https://github.com/manishMandal02/growmart-frontend",
-    "link": "https://growmart.netlify.app/",
-    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus unde quae recusandae sapiente.",
-    "tags": [
-      "ReactJs",
-      "E-commerce",
-      "scss",
-      "Fullstack",
-      "RestAPI",
-      "Authentication",
-      "MobileFirst",
-      "PaymentGateway"
-    ],
-    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+    "title": "My Portfolio (old)",
+    "desc": "My first portfolio inspired by Matt's personal site 👉 mattfarley.ca, built it as mobile first experience with PWA support",
+    "github": "https://github.com/manishMandal02/kodai-interiors-static",
+    "link": "http://kodaiinteriors.com",
+    "tech": ["ReactJs", "SCSS", "Mobile First", "SEO"]
   }
 ]

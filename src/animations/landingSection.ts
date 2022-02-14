@@ -31,9 +31,9 @@ const planeVariants = {
     },
   },
   whileInView: {
-    y: [2, -15, 2],
+    y: [2, -20, 2],
     x: [1, -10, 1],
-    rotateX: [10, -20, 10],
+    rotateX: [10, -22, 10],
     skew: [0, -3, 0],
     rotateZ: [0, 0],
     rotateY: [-5, -5],
@@ -106,7 +106,7 @@ const subTitleVariant = {
     transition: {
       type: 'spring',
       duration: 1,
-      delay: i * 0.3,
+      delay: i * 0.26,
       stiffness: 100,
     },
   }),

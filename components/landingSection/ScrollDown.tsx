@@ -34,7 +34,7 @@ const ScrollDown = () => {
               variants={scrollDownVariant}
               onClick={() => scrollTo('about-me')}
               whileHover='onHover'
-              className=' py-4 px-4 rounded-full bg-white dark:bg-slate-400  shadow-md dark:shadow-md text-lg mr-4 scale-125 ms:text-base ms:py-3 ms:px-3 shadow-gray-300 dark:shadow-gray-400 cursor-pointer '
+              className=' py-4 px-4 rounded-full bg-white dark:bg-slate-500  shadow-md dark:shadow-sm text-lg mr-4 scale-125 ms:text-base ms:py-3 ms:px-3 shadow-gray-300 dark:shadow-gray-400 cursor-pointer '
             >
               <BsArrowsExpand />
             </motion.div>

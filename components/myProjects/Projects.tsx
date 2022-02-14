@@ -12,26 +12,28 @@ const Projects = () => {
   const Arrow = isViewMore ? FaChevronUp : FaChevronDown;
   return (
     <>
-      <div className='flex flex-wrap  items-center justify-center w-2/3 ms:w-4/5'>
+      <div className='flex flex-wrap  items-center justify-start -ml-4 w-2/3 ms:w-4/5'>
         {allProjectsData.map((data, i) => {
           if (!isViewMore ? i <= 2 : i <= 5) {
             return <ProductCard id={nanoid()} {...data} />;
           }
         })}
       </div>
-      <button
-        onClick={() => {
-          setIsViewMore((prev) => !prev);
-        }}
-        className='group mt-8 flex items-center text-lg text-slate-900 dark:text-gray-400 font-medium'
-      >
-        {isViewMore ? 'View Less' : 'View More'}
-        <Arrow
-          className={`text-base ml-2 ${
-            isViewMore ? 'group-hover:-translate-y-px' : 'group-hover:translate-y-px'
-          } transition-all duration-200 `}
-        />
-      </button>
+      {allProjectsData.length > 3 && (
+        <button
+          onClick={() => {
+            setIsViewMore((prev) => !prev);
+          }}
+          className='group mt-8 flex items-center text-lg text-slate-900 dark:text-gray-400 font-medium'
+        >
+          {isViewMore ? 'View Less' : 'View More'}
+          <Arrow
+            className={`text-base ml-2 ${
+              isViewMore ? 'group-hover:-translate-y-px' : 'group-hover:translate-y-px'
+            } transition-all duration-200 `}
+          />
+        </button>
+      )}
       {isViewMore && (
         <a
           href='https://github.com/manishMandal02'
