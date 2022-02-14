@@ -48,11 +48,17 @@ export default function Home() {
             'A FullStack Web Developer,  Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop applications.',
           images: [
             {
-              url: '/manish-mandal-web.png',
-              width: 800,
-              height: 420,
+              url: 'https://manishmandal.me/manish-mandal-web.png',
+              width: 1650,
+              height: 850,
               alt: 'Manish Mandal',
             },
+            // {
+            //   url: '/manish-mandal-web.png',
+            //   width: 800,
+            //   height: 420,
+            //   alt: 'Manish Mandal',
+            // },
           ],
           site_name: 'Manish Mandal',
         }}
