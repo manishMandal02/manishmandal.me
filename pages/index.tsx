@@ -25,6 +25,7 @@ export default function Home() {
       <Head>
         <title>Manish Mandal</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta name='theme-color' content='#3b82f6' />
         <meta
           name='keywords'
           content='A FullStack web developer, Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop applications.'
