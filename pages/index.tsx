@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { NextSeo } from 'next-seo';
 
 // aos animation
 import AOS from 'aos';
@@ -14,6 +13,7 @@ import ContactMe from '../components/contactMe/Index';
 import AboutMe from '../components/aboutMe/Index';
 import Blog from '../components/blog';
 import { useState } from 'react';
+import { NextSeo } from 'next-seo';
 
 export default function Home() {
   if (process.browser) {
