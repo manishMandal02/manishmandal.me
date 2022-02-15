@@ -21,7 +21,7 @@ const MyEmail: React.FC<Props> = ({ customAnimation }) => {
         setIsCopied(false);
       }, 800);
     }
-    gaEvent({ action: 'email', params: 'email-copied' });
+    gaEvent({ action: 'email_copied', params: 'email_copied' });
   };
   return (
     <>
