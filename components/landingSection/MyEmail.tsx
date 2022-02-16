@@ -16,7 +16,7 @@ const MyEmail: React.FC<Props> = ({ customAnimation }) => {
     if (navigator.clipboard) {
       setIsCopied(true);
 
-      await navigator.clipboard.writeText('manishmandalj@gmail.com');
+      await navigator.clipboard.writeText('hello@manishmandal.me');
       setTimeout(() => {
         setIsCopied(false);
       }, 800);
@@ -26,7 +26,7 @@ const MyEmail: React.FC<Props> = ({ customAnimation }) => {
   return (
     <>
       <motion.div
-        className='w-98 mb-2 ms:w-84 relative group flex justify-between items-center mt-16 ms:mt-12 border-2 border-primary dark:border-primary-dark  cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
+        className='w-98 mb-2 ms:w-82 relative group flex justify-between items-center mt-16 ms:mt-12 border-2 border-primary dark:border-primary-dark  cursor-pointer rounded-md overflow-hidden border-collapse  shadow-primary  shadow-sm '
         onClick={copyEmailHandler}
         variants={customAnimation ? undefined : emailContainerVariant}
         initial='initial'
@@ -56,7 +56,7 @@ const MyEmail: React.FC<Props> = ({ customAnimation }) => {
         </div>
         <div className='flex w-full items-center justify-center '>
           <p className='group-hover:text-lg ms:group-hover:text-  transition-all duration-400   m-0 flex text-xl ms:text-lg font-medium tracking-wide text-center justify-center text-slate-700 dark:text-gray-300 py-2 px-4 ms:px-2 '>
-            manishmandalj@gmail.com
+            hello@manishmandal.me
           </p>
         </div>
       </motion.div>

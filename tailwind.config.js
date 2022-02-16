@@ -19,9 +19,8 @@ module.exports = {
         400: '400ms',
       },
       width: {
-        82: '20.5rem',
-        84: '22.5rem',
-        98: '25rem',
+        82: '21.4rem',
+        98: '23.5rem',
         100: '64rem',
       },
       spacing: {
