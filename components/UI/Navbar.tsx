@@ -23,7 +23,7 @@ const Navbar = () => {
   const blogLink = 'https://blog.manishmandal.me';
 
   return (
-    <nav className='h-20 ms:h-28 overflow-hidden ms:px-0 ms:pt-0   px-28 py-8 pt-10 absolute top-0 w-full z-10 bg-white dark:bg-primaryDarkBG transition-all duration-400'>
+    <nav className='h-20 ms:h-28 overflow-hidden ms:px-0 ms:pt-0   px-24 py-8 pt-10 absolute top-0 w-full z-10 bg-white dark:bg-primaryDarkBG transition-all duration-400'>
       <div className='ms:hidden h-full flex items-center justify-around relative'>
         <Image src={'/m-logo.svg'} className='cursor-pointer' width={60} height={60} alt='manish-mandal' />
         <div className='flex items-center justify-center overflow-hidden text-slate-600  dark:text-gray-300'>
