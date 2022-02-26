@@ -60,7 +60,7 @@ const About = () => {
         <span className='bg-green-300 px-1 dark:text-gray-900 rounded-sm'> NodeJs</span> to develop <br /> web
         applications. <br />
         <p className='mt-1'>
-          I spend a significant amount of time developing and {space}
+          I've spent significant amount of time developing and {space}
           {newLine}
           nurturing my skills and always looking for opportunities <br />
           to apply them.
