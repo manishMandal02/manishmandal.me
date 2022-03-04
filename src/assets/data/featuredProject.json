@@ -1,5 +1,14 @@
 [
   {
+    "image": "/editor-banner.jpg",
+    "title": "Graphic Design Tool (like canva)",
+    "subTitle": "This app will help create beautiful designs",
+    "github": "https://github.com/manishMandal02/growmart-frontend",
+    "link": "https://growmart.netlify.app/",
+    "tags": ["Graphic Design Tool", "Image Editor", "Ads Creator", "Meme Maker", "App not completed*"],
+    "tech": ["React", "Redux", "SCSS", "MUI", "NodeJs", "Express", "MongoDB"]
+  },
+  {
     "image": "/growmart-banner.webp",
     "title": "GrowMart",
     "subTitle": "FullStack e-commerce webapp with react",
