@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import Script from 'next/script';
 
 class MyDocument extends Document {
   render() {
@@ -27,7 +26,7 @@ class MyDocument extends Document {
           `,
             }}
           /> */}
-          <Script
+          <script
             id='veonr'
             dangerouslySetInnerHTML={{
               __html: `(function () {window._veoping = [];window.VEOPING_ID = "NTb1EepgyS";d = document;s = d.createElement("script");s.src = "https://api.app.veonr.com/api/pingpong.js";s.async = 1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
