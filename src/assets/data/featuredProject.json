@@ -8,6 +8,14 @@
     "tech": ["NextJs", "Zustand", "TailwindCSS", "NodeJs", "Firebase"]
   },
   {
+    "image": "/bitcoin-game-banner.jpg",
+    "title": "Guess Bitcoin Price",
+    "subTitle": "Guess if Bitcoin price will go Higher or Lower in 1min",
+    "link": "https://bitcoin-game.vercel.app",
+    "tags": ["Live Custom Charts", "Game", "Emoji Reaction", "Web Scrapping"],
+    "tech": ["NextJs", "Zustand", "TailwindCSS", "NodeJs", "Express"]
+  },
+  {
     "image": "/growmart-banner.webp",
     "title": "GrowMart",
     "subTitle": "FullStack e-commerce webapp with react",
