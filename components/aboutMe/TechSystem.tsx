@@ -10,18 +10,18 @@ const TechSystem = () => {
     },
   };
 
-  const jsLogo: string =
-    'https://res.cloudinary.com/vastia/image/upload/v1642930174/portfolio/TechStack/5125114039554278920_1_uvsljb.png';
+  const tsLogo: string =
+    'https://res.cloudinary.com/mandal/image/upload/v1683794394/portfolio/TechStack/typescript_cljttk.png';
 
-  const mernTech: string[] = [
-    'https://res.cloudinary.com/vastia/image/upload/v1615998803/portfolio/TechStack/react_wpgmkr.png',
-    'https://res.cloudinary.com/vastia/image/upload/v1642861709/portfolio/TechStack/nextjs_noqhb8.svg',
-    'https://res.cloudinary.com/vastia/image/upload/v1615998802/portfolio/TechStack/node-js_b2crs4.png',
-    'https://res.cloudinary.com/vastia/image/upload/v1642920970/portfolio/TechStack/express-1_pbocwy.png',
-    'https://res.cloudinary.com/vastia/image/upload/v1642923885/portfolio/TechStack/fgma-logo.svg_mfry7c.png',
-    'https://res.cloudinary.com/vastia/image/upload/v1631982867/portfolio/TechStack/docker_u8iwmg.png',
-    'https://res.cloudinary.com/vastia/image/upload/v1615998803/portfolio/TechStack/vs-code_qywr62.png',
-    'https://res.cloudinary.com/vastia/image/upload/v1642923744/portfolio/TechStack/tailwindcss_wjrmzx.svg',
+  const techStack: string[] = [
+    'https://res.cloudinary.com/mandal/image/upload/v1615998803/portfolio/TechStack/react_wpgmkr.png',
+    'https://res.cloudinary.com/mandal/image/upload/v1642861709/portfolio/TechStack/nextjs_noqhb8.svg',
+    'https://res.cloudinary.com/mandal/image/upload/v1615998802/portfolio/TechStack/node-js_b2crs4.png',
+    'https://res.cloudinary.com/mandal/image/upload/v1642920970/portfolio/TechStack/express-1_pbocwy.png',
+    'https://res.cloudinary.com/mandal/image/upload/v1642923885/portfolio/TechStack/fgma-logo.svg_mfry7c.png',
+    'https://res.cloudinary.com/mandal/image/upload/v1631982867/portfolio/TechStack/docker_u8iwmg.png',
+    'https://res.cloudinary.com/mandal/image/upload/v1615998803/portfolio/TechStack/vs-code_qywr62.png',
+    'https://res.cloudinary.com/mandal/image/upload/v1642923744/portfolio/TechStack/tailwindcss_wjrmzx.svg',
   ];
 
   return (
@@ -38,51 +38,56 @@ const TechSystem = () => {
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 z-20 shadow-gray-200   w-14 h-14 rounded-full absolute -top-6 left-28 py-2 px-2`}
         >
-          <Image src={mernTech[0]} height={50} width={50} className='' />
+          <Image alt={techStack[0]} src={techStack[0]} height={50} width={50} className='' />
         </motion.div>
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 shadow-gray-200 z-20  w-14 h-14 rounded-full absolute top-2 left-4 py-2 px-2`}
         >
-          <Image src={mernTech[6]} height={50} width={50} className='' />
+          <Image alt={techStack[6]} src={techStack[6]} height={50} width={50} className='' />
         </motion.div>
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 w-14 z-20 h-14 rounded-full absolute top-28 -right-8 py-2 px-2`}
         >
-          <Image src={mernTech[1]} height={50} width={50} className='' />
+          <Image alt={techStack[1]} src={techStack[1]} height={50} width={50} className='' />
         </motion.div>
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 z-20 w-14 h-14 rounded-full absolute top-4 right-2 py-2 px-2`}
         >
-          <Image src={mernTech[7]} height={50} width={50} className='' />
+          <Image alt={techStack[7]} src={techStack[7]} height={50} width={50} className='' />
         </motion.div>
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 z-20 w-14 h-14 rounded-full absolute top-28 -left-7 py-2 px-2`}
         >
-          <Image src={mernTech[2]} height={50} width={50} className='' />
+          <Image alt={techStack[2]} src={techStack[2]} height={50} width={50} className='' />
         </motion.div>
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 z-20 w-14 h-14 rounded-full absolute top-52 left-2 py-2 px-2`}
         >
-          <Image src={mernTech[5]} height={50} width={50} className='' />
+          <Image alt={techStack[5]} src={techStack[5]} height={50} width={50} className='' />
         </motion.div>
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 z-20 w-14 h-14 rounded-full absolute top-64  left-28 py-2 px-2`}
         >
-          <Image src={mernTech[3]} height={50} width={50} className='' />
+          <Image alt={techStack[3]} src={techStack[3]} height={50} width={50} className='' />
         </motion.div>
         <motion.div
           className={`bg-white dark:bg-gray-100 flex items-center justify-center shadowPlane0 z-20 w-14 h-14 rounded-full absolute top-52  left-56 py-2 px-2`}
         >
-          <Image src={mernTech[4]} height={40} width={30} className=' ' />
+          <Image alt={techStack[4]} src={techStack[4]} height={40} width={30} className=' ' />
         </motion.div>
       </motion.div>
       {/* JS in center */}
       <motion.div
         variants={techStackVariant}
         animate='animate0'
-        className='bg-white dark:bg-gray-100 flex items-center justify-center w-20 h-20 rounded-full absolute'
+        className='bg-white dark:bg-gray-100 flex items-center justify-center w-16 h-16 rounded-full absolute'
       >
-        <Image src={jsLogo} layout='fill' className='z-20 rounded-full  object-cover object-center ' />
+        <Image
+          alt={'javascript logo'}
+          src={tsLogo}
+          fill
+          className='z-20 rounded-full  object-cover object-center p-2'
+        />
       </motion.div>
     </div>
   );

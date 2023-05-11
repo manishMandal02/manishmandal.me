@@ -28,7 +28,7 @@ const ContactMe = () => {
           <p className='m-0 mt-8 ms:mt-4 ms:px-2  font-medium  text-lg ms:text-lg text-slate-700 dark:text-gray-400 text-center leading-snug'>
             You can stay in touch with me on &nbsp;
             <a
-              href='https://twitter.com/onemandal'
+              href='https://twitter.com/manishMandalJ'
               target='_blank'
               rel='noreferrer'
               className='text-sky-500 appearance-none dark:text-sky-400'

@@ -16,7 +16,7 @@ import { useState } from 'react';
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
-  if (process.browser) {
+  if (typeof window !== 'undefined') {
     AOS.init();
   }
 
@@ -45,16 +45,16 @@ export default function Home() {
           url: 'https://manishmandal.me',
           title: 'Manish Mandal',
           description:
-            'A FullStack Web Developer,  Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop web applications.',
+            'FullStack Web Developer,  Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop web applications.',
           images: [
             {
-              url: 'https://manishmandal.me/manish-mandal-web.png',
+              url: 'https://manishmandal.me/manish-mandal-web.jpg',
               width: 1650,
               height: 850,
               alt: 'Manish Mandal',
             },
             // {
-            //   url: '/manish-mandal-web.png',
+            //   url: '/manish-mandal-web.jpg',
             //   width: 800,
             //   height: 420,
             //   alt: 'Manish Mandal',
@@ -63,8 +63,8 @@ export default function Home() {
           site_name: 'Manish Mandal',
         }}
         twitter={{
-          handle: '@onemandal',
-          site: '@onemandal',
+          handle: '@manishMandalJ',
+          site: '@manishMandalJ',
           cardType: 'summary_large_image',
         }}
       />

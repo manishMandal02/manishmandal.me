@@ -21,7 +21,7 @@ const ThemeToggleSwitch = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  };
+};
 
   useEffect(() => {
     toggleTheme(isDark);
@@ -37,7 +37,7 @@ const ThemeToggleSwitch = () => {
           isDark ? 'bg-left' : 'bg-center'
         }`}
         style={{
-          backgroundImage: `url("https://res.cloudinary.com/vastia/image/upload/v1644491008/portfolio/${
+          backgroundImage: `url("https://res.cloudinary.com/mandal/image/upload/v1644491008/portfolio/${
             isDark ? 'dark' : 'light'
           }-mode.webp")`,
         }}

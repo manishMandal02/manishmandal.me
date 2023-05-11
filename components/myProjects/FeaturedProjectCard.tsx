@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
+import { nanoid } from 'nanoid';
 import Image from 'next/image';
 import React from 'react';
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 interface Props {
-  id: string;
   image: string;
   title: string;
   subTitle: string;
@@ -16,7 +16,7 @@ interface Props {
   isFlipped?: boolean;
 }
 
-const FeaturedProductCard: React.FC<Props> = ({
+const FeaturedProjectCard: React.FC<Props> = ({
   title,
   subTitle,
   github,
@@ -25,14 +25,12 @@ const FeaturedProductCard: React.FC<Props> = ({
   tech,
   isFlipped,
   image,
-  id,
 }) => {
   return (
     <div
       className={`h-72 ms:h-full w-100 ms:w-full flex ${
         isFlipped ? 'flex-row-reverse' : ''
       } ms:flex-col mt-20 ms:mt-12 ${isFlipped ? '-ml-16' : '-mr-16'} ms:ml-0 ms:mr-0 ms:px-2`}
-      key={id}
       data-aos={isFlipped ? 'fade-left' : 'fade-right'}
       data-aos-duration='500'
       data-aos-delay='100'
@@ -84,7 +82,7 @@ const FeaturedProductCard: React.FC<Props> = ({
         <div className='flex w-14 ms:w-16 ms:self-center item-center justify-between text-lg  ms:text-xl top-0 text-slate-600 dark:text-gray-400'>
           {github && (
             <a
-              href={github && github}
+              href={github}
               target='_blank'
               rel='noreferrer'
               className='group text-xl ms:text-2xl cursor-pointer mr-3 hover:text-slate-900 dark:hover:text-gray-400'
@@ -106,4 +104,4 @@ const FeaturedProductCard: React.FC<Props> = ({
   );
 };
 
-export default FeaturedProductCard;
+export default FeaturedProjectCard;

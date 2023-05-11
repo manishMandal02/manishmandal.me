@@ -3,7 +3,6 @@ import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 interface Props {
-  id: string;
   title: string;
   github?: string;
   link?: string;
@@ -11,11 +10,10 @@ interface Props {
   tech: string[];
 }
 
-const ProductCard: React.FC<Props> = ({ id, title, tech, github, link, desc }) => {
+const ProjectCard: React.FC<Props> = ({ title, tech, github, link, desc }) => {
   return (
     <div
       className='w-80 mt-4 h-60 ms:h-60 ms:w-full flex flex-col justify-between py-3 px-4  ml-4 border-2 border-primary shadow-sm rounded  transition-all duration-200 overflow-hidden'
-      key={id}
       data-aos='fade-up'
       data-aos-duration='500'
       // data-aos-delay='150'
@@ -61,4 +59,4 @@ const ProductCard: React.FC<Props> = ({ id, title, tech, github, link, desc }) =
   );
 };
 
-export default ProductCard;
+export default ProjectCard;

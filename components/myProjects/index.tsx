@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FeaturedProductCard from './FeaturedProjectCard';
+import FeaturedProjectCard from './FeaturedProjectCard';
 import { nanoid } from 'nanoid';
 import featuredProjectsData from '../../src/assets/data/featuredProject.json';
 
@@ -20,7 +20,9 @@ const MyProjects = () => {
         </div>
         <div className=' -mt-8 ms:-mt-4 flex flex-col w-full items-center justify-center'>
           {featuredProjectsData.map((data, i) => (
-            <FeaturedProductCard id={nanoid()} {...data} isFlipped={i % 2 !== 0} />
+            <div key={nanoid()}>
+              <FeaturedProjectCard isFlipped={i % 2 !== 0} {...data} />
+            </div>
           ))}
           <div className='mt-16 ms:mt-10 w-full flex flex-col items-center justify-center'>
             <div className='relative'>

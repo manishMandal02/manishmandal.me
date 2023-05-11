@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-import ProductCard from './ProjectCard';
+import ProjectCard from './ProjectCard';
 import allProjectsData from '../../src/assets/data/allProjects.json';
 import { FaChevronDown, FaChevronUp, FaExternalLinkAlt } from 'react-icons/fa';
 import { nanoid } from 'nanoid';
 
 const Projects = () => {
   // Showing limited number of projects with view more btn
-  const [isViewMore, setIsViewMore] = useState<boolean>(false);
+  const [isViewMore, setIsViewMore] = useState(false);
 
   const Arrow = isViewMore ? FaChevronUp : FaChevronDown;
   return (
@@ -15,7 +15,9 @@ const Projects = () => {
       <div className='flex flex-wrap  items-center justify-center -ml-4 w-2/3 ms:w-4/5'>
         {allProjectsData.map((data, i) => {
           if (!isViewMore ? i <= 2 : i <= 5) {
-            return <ProductCard id={nanoid()} {...data} />;
+            <div key={nanoid()}>
+              <ProjectCard {...data} />
+            </div>;
           }
         })}
       </div>

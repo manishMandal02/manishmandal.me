@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Subtitle: React.FC<Props> = ({ controls }) => {
-  const mainSkills = ['🎨 Design', '👨‍💻 Develop', '💹 Market'];
+  const mainSkills = ['🎨 Design', '👨‍💻 Develop', '💡Inspire'];
 
   return (
     <>

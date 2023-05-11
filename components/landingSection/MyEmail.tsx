@@ -1,11 +1,12 @@
-import { motion, Variants } from 'framer-motion';
+import { motion,  } from 'framer-motion';
 import React, { useState } from 'react';
 import { FaCopy, FaEnvelope } from 'react-icons/fa';
-import { emailContainerVariant, introTitleVariant } from '../../src/animations/landingSection';
+import { emailContainerVariant } from '../../src/animations/landingSection';
 // import { gaEvent } from '../../src/lib/ga';
 
 interface Props {
   customAnimation?: boolean;
+  showResume?: boolean;
 }
 
 const MyEmail: React.FC<Props> = ({ customAnimation }) => {

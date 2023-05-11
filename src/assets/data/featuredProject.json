@@ -5,7 +5,8 @@
     "subTitle": "This app will help create beautiful designs",
     "link": "https://m-editor.vercel.app/app",
     "tags": ["Graphic Design Tool", "Image Editor", "Ads Creator", "Meme Maker", "App not completed*"],
-    "tech": ["NextJs", "Zustand", "TailwindCSS", "NodeJs", "Firebase"]
+    "tech": ["NextJs", "Zustand", "TailwindCSS", "NodeJs", "Firebase"],
+    "github": "https://github.com/manishMandal02/visual-editor"
   },
   {
     "image": "/bitcoin-game-banner.jpg",
@@ -13,7 +14,8 @@
     "subTitle": "Guess if Bitcoin price will go Higher or Lower in 1min",
     "link": "https://bitcoin-game.vercel.app",
     "tags": ["Live Custom Charts", "Game", "Emoji Reaction", "Web Scrapping"],
-    "tech": ["NextJs", "Zustand", "TailwindCSS", "NodeJs", "Express"]
+    "tech": ["NextJs", "Zustand", "TailwindCSS", "NodeJs", "Express"],
+    "github": "https://github.com/manishMandal02/bitcoin-guess-game-frontend"
   },
   {
     "image": "/growmart-banner.webp",
