@@ -52,9 +52,9 @@ const HeroSection = () => {
           <Link
             href={'/manish-resume.pdf'}
             target='_black'
-            className='flex items-center justify-center text-white border px-3.5 h-12 rounded-md mt-16 ml-6 '
+            className='flex items-center justify-center text-white border border-opacity-50 px-4 h-12 rounded-md mt-16 ml-6 '
           >
-            My Resume <BiLinkExternal className='ml-1.5' />
+            My Resume <BiLinkExternal className='ml-2' />
           </Link>
         </motion.div>
         {/* Scroll Down */}

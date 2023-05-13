@@ -162,7 +162,7 @@ const techStackContainerVariant = {
     rotate: 360,
     transition: {
       repeat: Infinity,
-      duration: 45,
+      duration: 60,
       ease: 'linear',
     },
   },

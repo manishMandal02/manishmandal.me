@@ -1,5 +1,9 @@
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './components/**/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -22,6 +26,10 @@ module.exports = {
         82: '21.4rem',
         98: '23.5rem',
         100: '64rem',
+        54: '13rem',
+      },
+      height: {
+        54: '13rem',
       },
       spacing: {
         18: '12%',
