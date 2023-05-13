@@ -7,7 +7,7 @@ import Blogs from './Blogs';
 const Blog = () => {
   return (
     <div>
-      <div className='ml-18 ms:ml-3 mt-16 mb-10'>
+      <div className='ml-18 ms:ml-px mt-16 mb-10'>
         <SectionHeader header='Blog' />
         <SectionSubHeader title='My Latest Blog Posts' />
         {/* Blogs */}

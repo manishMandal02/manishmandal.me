@@ -20,14 +20,19 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className='flex  justify-center '>
+    <div className='flex  justify-center ms:flex-col '>
       {isLoading ? <p>Loading...</p> : null}
       {blogPosts
-        ? blogPosts.map((blog) => (
-            <div className=''>
-              <BlogCard {...blog} />
-            </div>
-          ))
+        ? blogPosts.map((blog) => {
+            // if(blogPosts.length > 0){
+
+            return (
+              <div className=''>
+                <BlogCard {...blog} />
+              </div>
+            );
+            // }
+          })
         : null}
     </div>
   );
