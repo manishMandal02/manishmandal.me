@@ -73,7 +73,7 @@ export default function Home() {
       <HeroSection />
       <AboutMe />
       <MyProjects />
-      {/* <Blog /> */}
+      <Blog />
       <ContactMe />
     </div>
   );

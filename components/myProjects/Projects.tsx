@@ -14,19 +14,32 @@ const Projects = () => {
     <>
       <div className='flex flex-wrap  items-center justify-center -ml-4 w-2/3 ms:w-4/5'>
         {allProjectsData.map((data, i) => {
-          if (!isViewMore ? i <= 2 : i <= 5) {
-            <div key={nanoid()}>
-              <ProjectCard {...data} />
-            </div>;
+          if (!isViewMore ? i <= 1 : i <= 5) {
+            return (
+              <div key={nanoid()}>
+                <ProjectCard {...data} />
+              </div>
+            );
           }
         })}
       </div>
+      {isViewMore && (
+        <a
+          href='https://github.com/manishMandal02'
+          target='_blank'
+          rel='noreferrer'
+          className='flex items-center justify-center mt-6 hover:underline transition-all duration-400 dark:text-gray-400 '
+        >
+          View all my projects on Github{' '}
+          <FaExternalLinkAlt className='text-sm ml-1 text-slate-600 dark:text-gray-400' />
+        </a>
+      )}
       {allProjectsData.length > 3 && (
         <button
           onClick={() => {
             setIsViewMore((prev) => !prev);
           }}
-          className='group mt-8 flex items-center text-lg text-slate-900 dark:text-gray-400 font-medium'
+          className='group mt-4 flex items-center text-lg text-slate-900 dark:text-gray-400 font-medium'
         >
           {isViewMore ? 'View Less' : 'View More'}
           <Arrow
@@ -35,17 +48,6 @@ const Projects = () => {
             } transition-all duration-200 `}
           />
         </button>
-      )}
-      {isViewMore && (
-        <a
-          href='https://github.com/manishMandal02'
-          target='_blank'
-          rel='noreferrer'
-          className='flex items-center justify-center mt-2 hover:underline transition-all duration-400 dark:text-gray-400 '
-        >
-          View all my projects on Github{' '}
-          <FaExternalLinkAlt className='text-sm ml-1 text-slate-600 dark:text-gray-400' />
-        </a>
       )}
     </>
   );

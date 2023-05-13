@@ -15,7 +15,7 @@ const ProjectCard: React.FC<Props> = ({ title, tech, github, link, desc }) => {
     <div
       className='w-80 mt-4 h-60 ms:h-60 ms:w-full flex flex-col justify-between py-3 px-4  ml-4 border-2 border-primary shadow-sm rounded  transition-all duration-200 overflow-hidden'
       data-aos='fade-up'
-      data-aos-duration='500'
+      data-aos-duration='650'
       // data-aos-delay='150'
       data-aos-mirror='true'
     >

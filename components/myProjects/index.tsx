@@ -16,7 +16,7 @@ const MyProjects = () => {
       <div className='mt-24 ms:mt-14 flex flex-col '>
         <div className='ml-18 ms:ml-3' id='projects'>
           <SectionHeader header='Projects' />
-          <SectionSubHeader title="Some Things I've Built." />
+          <SectionSubHeader title="Some Things I've Built" />
         </div>
         <div className=' -mt-8 ms:-mt-4 flex flex-col w-full items-center justify-center'>
           {featuredProjectsData.map((data, i) => (

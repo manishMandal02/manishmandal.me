@@ -23,15 +23,15 @@ const Divider: React.FC<Props> = ({
     >
       <img
         src='/triangle.svg'
-        className='w-52 absolute opacity-50'
+        className='w-52 absolute !opacity-30'
         data-aos='fade-down'
-        data-aos-duration='400'
+        data-aos-duration='450'
         data-aos-mirror='true'
       />
       <div
         className='flex flex-col items-center -mt-4'
         data-aos='zoom-in'
-        data-aos-duration='500'
+        data-aos-duration='450'
         data-aos-delay='200'
         data-aos-mirror='true'
       >
