@@ -12,7 +12,7 @@ import Projects from './Projects';
 const MyProjects = () => {
   return (
     <div className='overflow-hidden w-full mb-6'>
-      <Divider quoteNum={2} marginTop={20} marginBottom={20} marginTopMobile={20} marginBottomMobile={28} />
+      <Divider quoteNum={2} marginTop={24} marginBottom={20} marginTopMobile={20} marginBottomMobile={28} />
       <div className='mt-24 ms:mt-14 flex flex-col '>
         <div className='ml-18 ms:ml-3' id='projects'>
           <SectionHeader header='Projects' />
