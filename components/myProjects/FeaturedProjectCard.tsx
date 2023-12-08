@@ -1,15 +1,14 @@
-import { motion } from 'framer-motion';
-import { nanoid } from 'nanoid';
 import Image from 'next/image';
 import React from 'react';
 
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaChrome } from 'react-icons/fa';
 
 interface Props {
   image: string;
   title: string;
   subTitle: string;
   github?: string;
+  chrome?: string;
   link: string;
   tags: string[];
   tech: string[];
@@ -20,6 +19,7 @@ const FeaturedProjectCard: React.FC<Props> = ({
   title,
   subTitle,
   github,
+  chrome,
   link,
   tags,
   tech,
@@ -58,11 +58,10 @@ const FeaturedProjectCard: React.FC<Props> = ({
           isFlipped ? '-mr-12' : '-ml-12'
         } ms:items-start ms:mr-0 ms:ml-0 ms:mt-2 ms:px-3 ms:relative`}
       >
-        <p className='text-slate-700 dark:text-gray-300 font-semibold text-2xl tracking-wide'>{title}</p>
-        <p className='text-gray-600 dark:text-gray-400 font-medium text-lg ms:text-base tracing-wide'>
-          {subTitle}
-        </p>
-        <div className='w-full flex-wrap mt-5 ms:mt-2 flex items-center justify-center  z-10 bg-slate-600 dark:bg-slate-800 text-gray-50 dark:text-gray-400 py-2 pb-5 ms:pb-4 px-2 ms:px-0 pl-0 rounded my-8 ms:my-0 shadow-sm '>
+        <p className='text-slate-700 dark:text-gray-300 font- text-2xl tracking-wide'>{title}</p>
+        <p className='text-gray-600 dark:text-gray-400 font-extralight ms:text-base mt-px'>{subTitle}</p>
+        {/* tags */}
+        <div className='w-full flex-wrap mt-5 ms:mt-2 flex items-center justify-center  z-10 bg-slate-600 dark:bg-slate-800 text-gray-50 dark:text-gray-400 py-2 pb-5 ms:pb-4 px-3 ms:px-0 pl-0 rounded my-8 ms:my-0 shadow-sm '>
           {tags.map((tag, i) => (
             <span
               key={tag + i}
@@ -72,6 +71,7 @@ const FeaturedProjectCard: React.FC<Props> = ({
             </span>
           ))}
         </div>
+        {/* tech */}
         <div className='w-full flex items-center justify-center dark:text-gray-400  flex-wrap -mt-4 ms:mt-2 mb-4 ms:mb-2 -ml-3 ms:-ml-0'>
           {tech.map((tech, i) => (
             <span key={tech + i} className='ml-3 mt-0 rounded-full font-medium dark:font-semibold text-sm'>
@@ -79,7 +79,7 @@ const FeaturedProjectCard: React.FC<Props> = ({
             </span>
           ))}
         </div>
-        <div className='flex w-14 ms:w-16 ms:self-center item-center justify-between text-lg  ms:text-xl top-0 text-slate-600 dark:text-gray-400'>
+        <div className='flex w-14 ms:w-16 ms:self-center item-center justify-between text-lg  ms:text-xl text-slate-600 dark:text-gray-400'>
           {github && (
             <a
               href={github}
@@ -90,6 +90,17 @@ const FeaturedProjectCard: React.FC<Props> = ({
               <FaGithub className='group-hover:scale-110 transition-all duration-300 ' />
             </a>
           )}
+          {chrome && (
+            <a
+              href={chrome}
+              target='_blank'
+              rel='noreferrer'
+              className='group text-xl ms:text-2xl cursor-pointer mr-3 hover:text-slate-900 dark:hover:text-gray-400'
+            >
+              <FaChrome className='group-hover:scale-110 transition-all duration-300 ' />
+            </a>
+          )}
+
           <a
             href={link}
             target='_blank'

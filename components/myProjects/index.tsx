@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FeaturedProjectCard from './FeaturedProjectCard';
 import { nanoid } from 'nanoid';
 import featuredProjectsData from '../../src/assets/data/featuredProject.json';
 
 import Divider from '../UI/Divider';
 import SectionHeader from '../UI/SectionHeader';
-import { motion } from 'framer-motion';
 import SectionSubHeader from '../UI/SectionSubHeader';
 import Projects from './Projects';
+
+// TODO -  update projects, add new ones
 
 const MyProjects = () => {
   return (

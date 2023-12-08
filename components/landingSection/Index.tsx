@@ -52,7 +52,7 @@ const HeroSection = () => {
           <Link
             href={'/manish-resume.pdf'}
             target='_black'
-            className='flex items-center justify-center text-white border border-opacity-50 px-4 h-12 rounded-md mt-16 ml-6 '
+            className='flex items-center justify-center text-slate-300 border-2 border-opacity-80 border-slate-200 px-4 h-12 rounded-md mt-[4.2rem] ml-6 '
           >
             My Resume <BiLinkExternal className='ml-2' />
           </Link>
