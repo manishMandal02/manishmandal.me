@@ -9,7 +9,7 @@ const BlogCard = ({ title, slug, coverImage, dateAdded }: BlogPost) => {
       <div
         className={`rounded-sm    h-72 ms:h-60   ms:w-screen w-99  flex relative bg-gray-400 m-0 mr-10   px-6 py-8 `}
       >
-        <Link href={`https:blog.manishmandal.me/${slug} `} target='_blank'>
+        <Link href={`https:blog.manishmandal.com/${slug} `} target='_blank'>
           <Image src={coverImage} alt={title} className='' fetchPriority='auto' fill />
         </Link>
       </div>
@@ -19,7 +19,7 @@ const BlogCard = ({ title, slug, coverImage, dateAdded }: BlogPost) => {
           weekday: 'short',
           year: 'numeric',
           month: 'short',
-          day: '2-digit',
+          day: '2-digit'
         })}
       </p>
     </div>

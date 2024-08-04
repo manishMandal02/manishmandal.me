@@ -1,4 +1,4 @@
-import { motion,  } from 'framer-motion';
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { FaCopy, FaEnvelope } from 'react-icons/fa';
 import { emailContainerVariant } from '../../src/animations/landingSection';
@@ -17,7 +17,7 @@ const MyEmail: React.FC<Props> = ({ customAnimation }) => {
     if (navigator.clipboard) {
       setIsCopied(true);
 
-      await navigator.clipboard.writeText('hello@manishmandal.me');
+      await navigator.clipboard.writeText('hello@manishmandal.com');
       setTimeout(() => {
         setIsCopied(false);
       }, 800);
@@ -57,7 +57,7 @@ const MyEmail: React.FC<Props> = ({ customAnimation }) => {
         </div>
         <div className='flex w-full items-center justify-center '>
           <p className='group-hover:text-lg ms:group-hover:text-  transition-all duration-400   m-0 flex text-xl ms:text-lg font-medium tracking-wide text-center justify-center text-slate-700 dark:text-gray-300 py-2 px-4 ms:px-2 '>
-            hello@manishmandal.me
+            hello@manishmandal.com
           </p>
         </div>
       </motion.div>

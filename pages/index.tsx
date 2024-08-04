@@ -40,19 +40,19 @@ export default function Home() {
         titleTemplate='Manish Mandal'
         defaultTitle='Manish Mandal'
         description='A FullStack web developer, Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop web applications.'
-        canonical='https://manishmandal.me'
+        canonical='https://manishmandal.com'
         openGraph={{
-          url: 'https://manishmandal.me',
+          url: 'https://manishmandal.com',
           title: 'Manish Mandal',
           description:
             'FullStack Web Developer,  Experienced in using JavaScript and its ecosystem, namely React & NodeJs to develop web applications.',
           images: [
             {
-              url: 'https://manishmandal.me/manish-mandal-web.jpg',
+              url: 'https://manishmandal.com/manish-mandal-web.jpg',
               width: 1650,
               height: 850,
-              alt: 'Manish Mandal',
-            },
+              alt: 'Manish Mandal'
+            }
             // {
             //   url: '/manish-mandal-web.jpg',
             //   width: 800,
@@ -60,12 +60,12 @@ export default function Home() {
             //   alt: 'Manish Mandal',
             // },
           ],
-          site_name: 'Manish Mandal',
+          site_name: 'Manish Mandal'
         }}
         twitter={{
           handle: '@manishMandalJ',
           site: '@manishMandalJ',
-          cardType: 'summary_large_image',
+          cardType: 'summary_large_image'
         }}
       />
       ;

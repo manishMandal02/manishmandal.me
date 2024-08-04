@@ -20,7 +20,7 @@ const Navbar = () => {
     scrollTo('contact');
   };
 
-  const blogLink = 'https://blog.manishmandal.me';
+  const blogLink = 'https://blog.manishmandal.com';
 
   return (
     <nav className='h-20 ms:h-28 overflow-hidden ms:px-0 ms:pt-0   px-24 py-8 pt-10 absolute top-0 w-full z-10 bg-white dark:bg-primaryDarkBG transition-all duration-400'>
